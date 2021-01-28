@@ -1,0 +1,87 @@
+////////////// 반응형 변수
+$breakpoints: (
+  "sm": (
+    max-width: 375px,
+  ),
+  "md": (
+    max-width: 768px,
+  ),
+  "lg": (
+    max-width: 992px,
+  ),
+  "xl": (
+    max-width: 1680px,
+  ),
+  "hg": (
+    max-width: 1920px,
+  ),
+);
+/// Responsive breakpoint manager
+/// @access public
+/// @param {String} $breakpoint - Breakpoint
+/// @requires $breakpoints
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == "string",
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+			+ 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+////////// 변수 //////////
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin:0;
+    width:100%;
+    height:100%;
+}
+div, p, a, li, h1, h2, h3, h4, h5, h6 {
+    font-family: $NotoSansKR;
+    color: $black;
+}
+ul {
+    padding:0;
+    margin:0;
+    display: flex;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.inner_continer {
+    display: flex;
+    &.site_width {
+        width: 100%;
+        max-width: $siteWidth;
+    }
+    &.con_width {
+        width: 100%;
+        max-width: $conWidth;
+    }
+}
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}

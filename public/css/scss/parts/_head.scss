@@ -1,0 +1,9 @@
+header.main_header {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .inner_continer {
+        justify-content: space-between;
+    }
+}
