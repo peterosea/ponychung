@@ -2,8 +2,34 @@ header.main_header {
     width:100%;
     display:flex;
     justify-content: center;
-    align-items: center;
-    .inner_continer {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    .inner_container {
         justify-content: space-between;
+        height: 90px;
+        align-items:center;
+    }
+    .logo_svg {
+        width:181px;
+        height:40px;
+        .logo-red {fill:#d4000f}
+        .logo-white {fill:#fff}
+    }
+    // 메인 메뉴
+    .main_nav {
+        li.item a {
+            font-size: 20px;
+            font-weight: 500;
+            display: flex;
+            padding: 15px 20px;
+        }
+    }
+    // 사이드 메뉴 : 로그인/회원가입
+    .side_menu_container {
+        li.item a {
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            padding: 10px;
+        }
     }
 }
