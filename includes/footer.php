@@ -1,5 +1,5 @@
 <footer class="main_footer">
-    <div class="inner_continer wide_width flex_row">
+    <div class="inner_container site_width flex_row">
         <div class="flex_col col_1_2">
             <ul class="foot_menu flex_row">
                 <li class="item">

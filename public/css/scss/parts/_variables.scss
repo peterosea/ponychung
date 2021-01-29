@@ -1,0 +1,25 @@
+// 사이트 기본 넓이 변수
+$siteWidth: 1820px;
+$conWidth: 1680px;
+
+// Color Variables
+$white: #ffffff;
+$grey-six:#666;
+$grey-eight:#888;
+$black: #222222;
+$pink:#efaaa9;
+$red:#e6240f;
+
+// Font Sizes
+$size-p:16px;
+$size-title-small:18px;
+
+// font style
+$NotoSansKR: "Noto Sans KR", sans-serif;
+
+$urlImg: "../img";
+.bgImg {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
