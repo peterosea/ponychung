@@ -9,6 +9,9 @@ $breakpoints: (
   "lg": (
     max-width: 992px,
   ),
+  "wide": (
+    max-width: 1280px,
+  ),
   "xl": (
     max-width: 1680px,
   ),
@@ -43,6 +46,9 @@ $breakpoints: (
 
 * {
     box-sizing: border-box;
+    &:focus {
+      outline:none;
+    }
 }
 
 html, body {
@@ -75,6 +81,14 @@ li {
 a {
     text-decoration: none;
     transition: all 0.3s;
+}
+.grey_style {
+  color:$grey-nine;
+}
+.bgImg {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 // 콘텐트 영역
@@ -111,14 +125,14 @@ a {
     flex-direction: column;
 }
 
-.bar_vert {
-  display:flex;
-  width:2px;
-  background-color: #c4c4c4;
-  margin-right:15px;
-  margin-left:15px;
-  height: 16px;
-}
+// .bar_vert {
+//   display:flex;
+//   width:2px;
+//   background-color: #c4c4c4;
+//   margin-right:15px;
+//   margin-left:15px;
+//   height: 16px;
+// }
 
 // 버튼 종류
 .btn {

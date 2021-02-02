@@ -22,23 +22,31 @@
                 </svg>
             </a>
         </div>
-        <nav class="main_nav">
+        <nav class="main_nav pc_menu">
             <ul class="menu flex_row">
                 <li class="item">
-                    <a href="#">지원공고</a>
+                    <a href="#">
+                        <span>지원공고</span>
+                    </a>
                 </li>
                 <li class="item">
-                    <a href="#">지원서작성</a>
+                    <a href="#">
+                        <span>지원서작성</span>
+                    </a>
                 </li>
                 <li class="item">
-                    <a href="#">지원현황</a>
+                    <a href="#">
+                        <span>지원현황</span>
+                    </a>
                 </li>
                 <li class="item">
-                    <a href="#">커뮤니티</a>
+                    <a href="#">
+                        <span>커뮤니티</span>
+                    </a>
                 </li>
             </ul>
         </nav>
-        <div class="side_menu_container">
+        <div class="side_menu_container pc_menu">
             <ul class="flex_row">
                 <li class="item">
                     <a href="#">로그인</a>
@@ -48,5 +56,38 @@
                 </li>
             </ul>
         </div>
+        <!-- 모바일 메뉴 -->
+        <!-- <nav class="mobile_nav">
+            <div class="mobile_menu btn btn_burger">
+                <a href="#">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </a>
+            </div>
+            <ul class="menu flex_row">
+                <li class="item">
+                    <a href="#">
+                        <span>지원공고</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <span>지원서작성</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <span>지원현황</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <span>커뮤니티</span>
+                    </a>
+                </li>
+            </ul>
+        </nav> -->
+        <!-- /.모바일 메뉴 -->
     </div>
 </header>
