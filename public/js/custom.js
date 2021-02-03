@@ -2,10 +2,8 @@ $(document).ready(function(){
     $('.slider-for').slick({
         dots: false,
         infinite: true,
-        speed: 500,
         fade: true,
         cssEase: 'linear',
-        autoplay:true,
         arrows:false
     });
     $('.slider-nav').slick({
@@ -13,9 +11,21 @@ $(document).ready(function(){
         dots: false,
         infinite: true,
         focusOnSelect: true,
-        autoplay:true,
+        cssEase: 'linear',
         arrows:false,
         slidesToShow: 2,
-        variableWidth: true
+        slidesToScroll: 1,
+        variableWidth: true,
     });
-  });
+
+    $('.mobile_menu').click(function(){
+        $(this).toggleClass("_active");
+        $('.mobile_nav').toggleClass("_active");
+    });
+    // $('.main_nav').hover(function(){
+    //     $('.submenu_grp').addClass("_active");
+    // });
+    // $('.submenu_grp').hover(function(){
+    //     $(this).toggleClass("_active");
+    // });
+});

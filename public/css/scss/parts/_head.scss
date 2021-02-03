@@ -3,6 +3,7 @@ header.main_header {
     display:flex;
     justify-content: center;
     border-bottom: 1px solid rgba(0,0,0,0.1);
+    position: relative;
     .inner_container {
         justify-content: space-between;
         height: 90px;
@@ -16,27 +17,82 @@ header.main_header {
         .logo-white {fill:#fff}
     }
     // 메인 메뉴
+    // 메뉴 넓이
+    $menuWidth: 140px;
+    $menuWidthM: 100px;
     .main_nav {
-        li.item a {
-            font-size: 20px;
-            font-weight: 500;
-            display: flex;
-            padding: 15px 20px;
-            // span {
-            //     box-shadow: inset 0 0px 0 #efaaa9;
-            //     transition:all 0.3s;
-            // }
-            &:hover {
-                color:$red;
-                // span {
-                //     box-shadow: inset 0 -14px $red;
-                // }
-            }
+        position: relative;
+        .menu {
+            padding: 0 30px;
             @include respond-to('wide') {
-                font-size: 17px;
-                padding: 10px;
+                padding: 0 10px;
             }
         }
+        li.item {
+            z-index: 9;
+                a {
+                font-size: 20px;
+                font-weight: 500;
+                display: flex;
+                padding: 15px;
+                width: $menuWidth;
+                justify-content: center;
+                &:hover {
+                    color:$red;
+                }
+                @include respond-to('wide') {
+                    font-size: 17px;
+                    padding: 10px;
+                    width: $menuWidthM;
+                }
+            }
+        }
+        .menu:hover + .submenu_grp, .submenu_grp:hover {
+            top:-15px;
+            opacity: 1;
+            visibility: visible;
+            z-index: 8;
+        }
+    }
+    // PC 서브메뉴
+    .submenu_grp {
+        position:absolute;
+        top:-75px;
+        // top:75px;
+        width: 100%;
+        background-color: $white;
+        justify-content: center;
+        padding: 110px 10px 30px;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+        transition:all 0.3s;
+        box-shadow: 0 5px 2px rgba(0,0,0,0.15);
+        @include respond-to('wide') {
+            padding: 80px 10px 20px;
+        }
+        li.item {
+            a {
+                font-size: 15px;
+                padding: 10px;
+                width: $menuWidth;
+                display:flex;
+                justify-content: center;
+                color:$brand-grey2;
+                @include respond-to('wide') {
+                    width: $menuWidthM;
+                    padding: 8px;
+                }
+            }
+        }
+        .submenu {
+            @extend .flex_col;
+        }
+        // &._active {
+        //     opacity: 1;
+        //     visibility: visible;
+        //     z-index: 8;
+        // }
     }
     // 사이드 메뉴 : 로그인/회원가입
     .side_menu_container {
@@ -45,6 +101,99 @@ header.main_header {
             font-weight: 500;
             display: flex;
             padding: 10px;
+        }
+    }
+    // 모바일 메뉴
+    .mobile_menu {
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+        transition:all 0.5s;
+        &.btn_burger {
+            width: 24px;
+            position: absolute;
+            right: 0;
+            span {
+                margin: 0 0 6px 0;
+            }
+        }
+        @include respond-to('md') {
+            visibility: visible;
+            opacity: 1;
+            z-index: 9;
+            &._active {
+                span {
+                    background-color:#fff;
+                }
+                .bar1 {
+                    transform: rotate(45deg);
+                    margin-top: -4px;
+                }
+                .bar2 {
+                    opacity: 0;
+                }
+                .bar3 {
+                    transform: rotate(-45deg);
+                    margin-top: -15px;
+                }
+            }
+        }
+    }
+    .mobile_nav {
+        display:none;
+        position: fixed;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+        transition:all 0.5s;
+        background-color: $brand-grey3;
+        padding: 20px;
+        height: 100%;
+        overflow: auto;
+        align-items: flex-start;
+        @include respond-to('md') {
+            display:flex;
+            &._active {
+                top:0;
+                visibility: visible;
+                opacity: 1;
+                z-index: 8;
+            }
+        }
+        .menu {
+            width: 100%;
+            justify-content: center;
+        }
+        li.item {
+            text-align:center;
+            display: flex;
+            &:last-child(){
+                border-bottom:none;
+            }
+            a {
+                font-size: 21px;
+                color:#fff;
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content:center;
+                padding:20px 5px;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+        }
+        li.has_submenu {
+            @extend .flex_col;
+        }
+        ul.submenu {
+            @extend .flex_col;
+            a {
+                font-size: 16px;
+                padding:10px 5px;
+                background-color: #404346;
+            }
         }
     }
 }
