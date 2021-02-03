@@ -22,7 +22,7 @@
                 </svg>
             </a>
         </div>
-        <nav class="main_nav pc_menu">
+        <nav class="main_nav show_pc">
             <ul class="menu flex_row">
                 <li class="item">
                     <a href="#">
@@ -45,8 +45,61 @@
                     </a>
                 </li>
             </ul>
+            <!-- PC 서브메뉴 -->
+            <ul class="submenu_grp flex_row">
+                <li class="item">
+                    <ul class="submenu">
+                        <li class="item">
+                            <a href="#">장학</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">학술지원</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">공고 관리</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <ul class="submenu">
+                        <li class="item">
+                            <a href="#">장학</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">학술지원</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">지원서 관리</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <ul class="submenu">
+                        <li class="item">
+                            <a href="#">지원 현황</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">접수 현황</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">심사</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <ul class="submenu">
+                        <li class="item">
+                            <a href="#">공지사항</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">게시판</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /.PC 서브메뉴 -->
         </nav>
-        <div class="side_menu_container pc_menu">
+        <div class="side_menu_container show_pc">
             <ul class="flex_row">
                 <li class="item">
                     <a href="#">로그인</a>
@@ -56,38 +109,77 @@
                 </li>
             </ul>
         </div>
-        <!-- 모바일 메뉴 -->
-        <!-- <nav class="mobile_nav">
-            <div class="mobile_menu btn btn_burger">
-                <a href="#">
-                    <span class="bar1"></span>
-                    <span class="bar2"></span>
-                    <span class="bar3"></span>
-                </a>
-            </div>
-            <ul class="menu flex_row">
-                <li class="item">
-                    <a href="#">
-                        <span>지원공고</span>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="#">
-                        <span>지원서작성</span>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="#">
-                        <span>지원현황</span>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="#">
-                        <span>커뮤니티</span>
-                    </a>
-                </li>
-            </ul>
-        </nav> -->
-        <!-- /.모바일 메뉴 -->
+        <div class="mobile_menu btn btn_burger">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </div>
     </div>
+    <!-- 모바일 메뉴 -->
+    <nav class="mobile_nav">
+        <ul class="menu flex_col">
+            <li class="item has_submenu">
+                <a href="#">
+                    <span>지원공고</span>
+                </a>
+                <ul class="submenu">
+                    <li class="item">
+                        <a href="#">장학</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">학술지원</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">공고 관리</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item has_submenu">
+                <a href="#">
+                    <span>지원서작성</span>
+                </a>
+                <ul class="submenu">
+                    <li class="item">
+                        <a href="#">장학</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">학술지원</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">지원서 관리</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item has_submenu">
+                <a href="#">
+                    <span>지원현황</span>
+                </a>
+                <ul class="submenu">
+                    <li class="item">
+                        <a href="#">지원 현황</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">접수 현황</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">심사</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item has_submenu">
+                <a href="#">
+                    <span>커뮤니티</span>
+                </a>
+                <ul class="submenu">
+                    <li class="item">
+                        <a href="#">공지사항</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">게시판</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- /.모바일 메뉴 --->
 </header>
