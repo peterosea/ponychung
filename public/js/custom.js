@@ -22,10 +22,7 @@ $(document).ready(function(){
         $(this).toggleClass("_active");
         $('.mobile_nav').toggleClass("_active");
     });
-    // $('.main_nav').hover(function(){
-    //     $('.submenu_grp').addClass("_active");
-    // });
-    // $('.submenu_grp').hover(function(){
-    //     $(this).toggleClass("_active");
-    // });
+    $('.submenu_grp').hover(function(){
+        $('nav.main_nav').toggleClass("_active");
+    });
 });
