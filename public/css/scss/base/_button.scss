@@ -1,0 +1,72 @@
+// 버튼 종류
+.btn {
+    display:inline-flex;
+    border-radius: 100px;
+    text-align: center;
+    justify-content: center;
+    &:focus {
+        box-shadow: none !important;
+    }
+    &.btn_box {
+        padding: 12px 35px;
+        font-size: $size-p;
+        border-radius: 0;
+        text-align: center;
+    }
+    &.btn_light {
+        color:$white;
+        background-color: #999;
+        &:hover {
+            color:$white;
+        }
+    }
+    &.btn_dark {
+        color:$white;
+        background-color: #555;
+    }
+    &.btn_red {
+        color:$white;
+        background-color: $red;
+    }
+    &.btn_border_box {
+        padding: 12px 32px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius:0;
+        color: $grey-six;
+        border: solid 1px #999999;
+        background-color: $white;
+        text-align: center;
+        &._complete {
+            color:$red;
+            background-color: #f0f0f0;
+            border:none;
+        }
+        &:hover {
+            background-color:$bg-light;
+        }
+    }
+}
+.btn_burger {
+    display:flex;
+    width: 16px;
+    flex-direction: column;
+    cursor: pointer;
+    span {
+        width: 100%;
+        height: 2px;
+        background-color: #222;
+        margin: 0 0 4px 0;
+        display: flex;
+        transition: 0.3s;
+        opacity: 1;
+    }
+    .bar3 {
+        margin-bottom: 0;
+    }
+    &:hover {
+        span {
+            background-color: #efaaaa;
+        }
+    }
+}

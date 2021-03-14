@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.033" height="15.614" viewBox="0 0 17.033 15.614">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:#999}.cls-2{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="그룹_139" transform="translate(-1513.999 -557.001)">
+        <g id="그룹_121" transform="translate(1513.999 557.001)">
+            <g id="그룹_116" transform="translate(4.667 14.194)">
+                <path id="패스_223" d="M1532.231 578.421h-10.947a.71.71 0 0 1 0-1.419h10.947a.71.71 0 1 1 0 1.419z" class="cls-1" transform="translate(-1520.575 -577.002)"/>
+            </g>
+            <g id="그룹_120">
+                <g id="그룹_117">
+                    <path id="패스_224" d="M1522.351 572.614a.71.71 0 0 1-.5-1.219l7.65-7.447a.347.347 0 0 0 0-.5l-5.054-4.919a.416.416 0 0 0-.568 0l-8.359 8.135a.346.346 0 0 0 0 .5l4.345 4.23a.709.709 0 1 1-.989 1.017l-4.345-4.23a1.763 1.763 0 0 1 0-2.533l8.358-8.136a1.84 1.84 0 0 1 2.548 0l5.053 4.919a1.766 1.766 0 0 1 0 2.533l-7.65 7.447a.706.706 0 0 1-.489.203z" class="cls-1" transform="translate(-1513.999 -557.001)"/>
+                </g>
+                <g id="그룹_118" transform="translate(11.818 12.046)"/>
+                <g id="그룹_119" transform="translate(5.21 5.613)"/>
+            </g>
+        </g>
+        <g id="그룹_122" transform="translate(1518.977 561.249)">
+            <path id="패스_227" d="M1527.8 570.524a.7.7 0 0 1-.5-.209l-6.08-6.117a.71.71 0 1 1 1.006-1l6.08 6.117a.71.71 0 0 1-.5 1.21z" class="cls-1" transform="translate(-1521.014 -562.987)"/>
+        </g>
+    </g>
+</svg>

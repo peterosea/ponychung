@@ -1,5 +1,5 @@
 <header class="main_header">
-    <div class="inner_container site_width flex_row">
+    <div class="container site_width flex_row">
         <div class="logo_container">
             <a href="/" class="logo" title="Pony Chung Foundation">
                 <svg id="logo_ponychung" class="logo_svg" xmlns="http://www.w3.org/2000/svg" width="181.12" height="40" viewBox="0 0 181.12 40">
@@ -24,23 +24,23 @@
         </div>
         <nav class="main_nav show_pc">
             <ul class="menu flex_row">
-                <li class="item">
-                    <a href="#">
+                <li class="item <?php if(strpos($page_name, 'application') !== false) { echo 'current'; }?>">
+                    <a href="/pages/application-list.php">
                         <span>지원공고</span>
                     </a>
                 </li>
-                <li class="item">
-                    <a href="#">
+                <li class="item <?php if(strpos($page_name, 'app_write') !== false) { echo 'current'; }?>">
+                    <a href="/pages/app_write-list.php">
                         <span>지원서작성</span>
                     </a>
                 </li>
-                <li class="item">
-                    <a href="#">
+                <li class="item <?php if(strpos($page_name, 'app_state') !== false) { echo 'current'; }?>">
+                    <a href="/pages/app_state-list.php">
                         <span>지원현황</span>
                     </a>
                 </li>
-                <li class="item">
-                    <a href="#">
+                <li class="item <?php if(strpos($page_name, 'community') !== false) { echo 'current'; }?>">
+                    <a href="/pages/community-list.php">
                         <span>커뮤니티</span>
                     </a>
                 </li>
@@ -89,10 +89,10 @@
                 <li class="item">
                     <ul class="submenu">
                         <li class="item">
-                            <a href="#">공지사항</a>
+                            <a href="/pages/community-list.php">공지사항</a>
                         </li>
                         <li class="item">
-                            <a href="#">게시판</a>
+                            <a href="/pages/board-list.php">게시판</a>
                         </li>
                     </ul>
                 </li>
@@ -102,7 +102,7 @@
         <div class="side_menu_container show_pc">
             <ul class="flex_row">
                 <li class="item">
-                    <a href="#">로그인</a>
+                    <a href="/pages/login.php">로그인</a>
                 </li>
                 <li class="item">
                     <a href="#">회원가입</a>
