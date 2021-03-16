@@ -105,7 +105,7 @@
                     <a href="/pages/login.php">로그인</a>
                 </li>
                 <li class="item">
-                    <a href="#">회원가입</a>
+                    <a href="/pages/register-term.php">회원가입</a>
                 </li>
             </ul>
         </div>

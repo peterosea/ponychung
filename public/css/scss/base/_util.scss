@@ -6,6 +6,15 @@
         width: 40%;
     }
 }
+input.form-control {
+    display: inline-block;
+    &.size-medium {
+        max-width: 254px;
+    }
+    &.size-small {
+        max-width: 92px;
+    }
+}
 // 드랍다운
 .btn.dropdown-toggle {
     background-color: transparent;
@@ -94,5 +103,35 @@ ul.dropdown-menu {
     &:hover {
         text-decoration: underline;
         color:$red;
+    }
+}
+
+// 체크박스
+.form-check {
+    .form-check-input {
+        margin-right: 10px;
+        border: none;
+        border-radius: 0;
+        background-color: $grey-c;
+        width: 19px;
+        height: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .form-check-input:checked[type=checkbox] {
+        background-image:none;
+        background-color: #f0dede;
+    }
+    .form-check-input:checked[type=checkbox]:before {
+        content:'';
+        width:9px;
+        height:9px;
+        display:inline-block;
+        background-color: #f03223;
+    }
+    .form-check-label {
+        font-size: 14px;
     }
 }

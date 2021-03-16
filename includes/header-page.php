@@ -35,6 +35,11 @@ if(strpos($page_name, 'board') !== false) {
     $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
     $backgroundImg = 'headerbg-board.jpg';
 }
+if(strpos($page_name, 'mypage') !== false) {
+    $currentCat = '마이페이지';
+    $currentDesc = '계정에 대한 기본 정보 확인 및 수정이 가능합니다.';
+    $backgroundImg = 'headerbg-mypage.jpg';
+}
 ?>
 
 <div class="page_header" style="background-image:url(<?php echo $imgURL . $backgroundImg; ?>);">
