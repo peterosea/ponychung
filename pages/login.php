@@ -28,9 +28,9 @@
                         </div>
                     </form>
                     <div class="link_grp">
-                        <a href="#">회원가입</a>
-                        <a href="#">아이디 찾기</a>
-                        <a href="#">비밀번호 찾기</a>
+                        <a href="/pages/register-term.php">회원가입</a>
+                        <a href="/pages/find-id.php">아이디 찾기</a>
+                        <a href="/pages/find-pw.php">비밀번호 찾기</a>
                     </div>
                 </div>
             </div>

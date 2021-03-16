@@ -24,6 +24,10 @@
         color:$white;
         background-color: #555;
     }
+    &.btn_black {
+        color:$white;
+        background-color: $black;
+    }
     &.btn_red {
         color:$white;
         background-color: $red;

@@ -84,6 +84,10 @@ body.etcpage .content_container {
   background-color: #f3f3f3;
 }
 
+b.point {
+  color: #d4000f;
+}
+
 .content_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,6 +100,7 @@ body.etcpage .content_container {
           justify-content: center;
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: #fff;
 }
 
 .container {
@@ -179,6 +184,29 @@ body.etcpage .content_container {
 
 .filter_wrap {
   margin-bottom: 32px;
+}
+
+.require:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-image: url("../img/ic_require.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 4px 9px;
+  margin-bottom: 3px;
+}
+
+.form_desc:before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-image: url("../img/ic_require.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 4px 9px 4px 0;
 }
 
 .borad_wrap .table_list {
@@ -375,6 +403,16 @@ body.etcpage .content_container {
   width: 40%;
 }
 
+input.form-control {
+  display: inline-block;
+}
+input.form-control.size-medium {
+  max-width: 254px;
+}
+input.form-control.size-small {
+  max-width: 92px;
+}
+
 .btn.dropdown-toggle {
   background-color: transparent;
   border-color: #ccc;
@@ -484,6 +522,39 @@ ul.dropdown-menu .dropdown-item {
   color: #d4000f;
 }
 
+.form-check .form-check-input {
+  margin-right: 10px;
+  border: none;
+  border-radius: 0;
+  background-color: #ccc;
+  width: 19px;
+  height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.form-check .form-check-input:checked[type=checkbox] {
+  background-image: none;
+  background-color: #f0dede;
+}
+.form-check .form-check-input:checked[type=checkbox]:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  background-color: #f03223;
+}
+.form-check .form-check-label {
+  font-size: 14px;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -514,6 +585,10 @@ ul.dropdown-menu .dropdown-item {
 .btn.btn_dark {
   color: #ffffff;
   background-color: #555;
+}
+.btn.btn_black {
+  color: #ffffff;
+  background-color: #222222;
 }
 .btn.btn_red {
   color: #ffffff;
@@ -1601,56 +1676,56 @@ body.etcpage .form-control {
   background-color: #f3f3f3;
 }
 
-body.etcpage.login .content_container {
+body.login .content_container {
   max-height: 900px;
   height: calc(90vh - 138px);
 }
-body.etcpage.login .login_wrap {
+body.login .login_wrap {
   width: 95%;
   max-width: 580px;
   background-color: #fff;
   padding: 55px 70px;
 }
-body.etcpage.login .title {
+body.login .title {
   margin-bottom: 55px;
 }
-body.etcpage.login .title h1 {
+body.login .title h1 {
   font-size: 28px;
   font-weight: 700;
   text-align: center;
 }
-body.etcpage.login .login-form {
+body.login .login-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 40px;
 }
-body.etcpage.login .login-form input.form-control::-webkit-input-placeholder {
+body.login .login-form input.form-control::-webkit-input-placeholder {
   color: #ccc !important;
 }
-body.etcpage.login .login-form input.form-control::-moz-placeholder {
+body.login .login-form input.form-control::-moz-placeholder {
   color: #ccc !important;
 }
-body.etcpage.login .login-form input.form-control:-ms-input-placeholder {
+body.login .login-form input.form-control:-ms-input-placeholder {
   color: #ccc !important;
 }
-body.etcpage.login .login-form input.form-control::-ms-input-placeholder {
+body.login .login-form input.form-control::-ms-input-placeholder {
   color: #ccc !important;
 }
-body.etcpage.login .login-form input.form-control::placeholder {
+body.login .login-form input.form-control::placeholder {
   color: #ccc !important;
 }
-body.etcpage.login .login-form .col-sm-8 .form-control {
+body.login .login-form .col-sm-8 .form-control {
   margin-bottom: 10px;
   padding: 20px;
 }
-body.etcpage.login .login-form .col-sm-8 .form-control:last-child {
+body.login .login-form .col-sm-8 .form-control:last-child {
   margin-bottom: 0;
 }
-body.etcpage.login .login-form .col-sm-4 {
+body.login .login-form .col-sm-4 {
   padding-left: 10px;
 }
-body.etcpage.login .login-form .btn.btn_border_box {
+body.login .login-form .btn.btn_border_box {
   border-color: #000;
   color: #000;
   width: 100%;
@@ -1660,11 +1735,11 @@ body.etcpage.login .login-form .btn.btn_border_box {
           align-items: center;
   font-size: 16px;
 }
-body.etcpage.login .link_grp {
+body.login .link_grp {
   text-align: center;
   margin-bottom: 25px;
 }
-body.etcpage.login .link_grp a {
+body.login .link_grp a {
   font-size: 14px;
   font-weight: 700;
   margin-right: 20px;
@@ -1673,8 +1748,344 @@ body.etcpage.login .link_grp a {
   border-right: 1px solid #ccc;
   padding-right: 20px;
 }
-body.etcpage.login .link_grp a:last-child {
+body.login .link_grp a:last-child {
   border: none;
   margin-right: 0;
   padding-right: 0;
+}
+
+body.register .content_container {
+  max-height: 900px;
+  height: calc(90vh - 138px);
+}
+body.register .register_wrap {
+  width: 95%;
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 50px 60px;
+}
+body.register .title {
+  padding-bottom: 25px;
+  margin-bottom: 12px;
+  border-bottom: solid 1px #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body.register .title .parent_title {
+  font-size: 28px;
+  color: #999;
+  margin-right: 20px;
+  font-weight: 300;
+}
+body.register .title ._arrow {
+  width: 11px;
+  height: 19px;
+  margin-right: 20px;
+  display: inline-block;
+  background-image: url("../img/ic_arrow_right.svg");
+}
+body.register .title h1 {
+  font-size: 21px;
+  color: #222222;
+  font-weight: 700;
+}
+body.register .term_wrap {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+body.register .term_wrap:nth-child(2) {
+  border-bottom: 1px solid #ccc;
+}
+body.register .term_wrap ._title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+body.register .term_wrap .text_wrap {
+  overflow-y: auto;
+  background-color: #eeeeee;
+  color: #222222;
+  padding: 25px;
+  font-size: 14px;
+  max-height: 190px;
+  margin-bottom: 8px;
+}
+body.register .term_wrap .agree_wrap {
+  color: #222222;
+  margin-bottom: 10px;
+}
+body.register .agree_whole_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+body.register .agree_whole_wrap .form-check {
+  display: inline-block;
+}
+body.register .agree_whole_wrap .form-check-label {
+  font-size: 16px;
+  font-weight: 700;
+}
+body.register .btn_grp {
+  margin-top: 50px;
+  text-align: center;
+}
+body.register .btn_grp a:first-child {
+  margin-right: 20px;
+}
+body.register.term_agree .content_container {
+  max-height: unset;
+  height: auto;
+}
+body.register.term_agree .content_container .container {
+  padding: 80px 0;
+}
+body.register.entry_form .register_wrap {
+  max-width: 860px;
+}
+body.register.entry_form .register_wrap .title {
+  margin-bottom: 0;
+}
+body.register.entry_form .form_table {
+  width: 100%;
+}
+body.register.entry_form .form_table th, body.register.entry_form .form_table td {
+  padding: 10px 0;
+  border-bottom: solid 1px #eee;
+  color: #999;
+}
+body.register.entry_form .form_table tr:last-child th, body.register.entry_form .form_table tr:last-child td {
+  border-bottom: solid 1px #ccc;
+}
+body.register.entry_form .form_table th {
+  width: 140px;
+  font-size: 16px;
+  font-weight: 700;
+}
+body.register.entry_form .form_table a.btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  height: 46px;
+  vertical-align: top;
+}
+body.register.entry_form .form_table input {
+  width: 95%;
+  height: 46px;
+  padding: 10px;
+  display: inline-block;
+}
+body.register.entry_form .form_table input.size-medium {
+  max-width: 254px;
+}
+body.register.entry_form .form_table input.size-small {
+  max-width: 92px;
+}
+body.register.entry_form .form_table td ._desc {
+  font-size: 14px;
+  color: #999;
+  padding-left: 10px;
+}
+body.register.entry_form .form_table td ._desc.bottom {
+  padding-left: 0;
+  margin-top: 8px;
+}
+body.register.entry_form .form_table td a {
+  margin-left: 10px;
+}
+
+body.find-item .content_container {
+  max-height: 900px;
+  height: calc(90vh - 138px);
+}
+body.find-item .content_container .container {
+  padding: 80px 0;
+}
+body.find-item .find_id_wrap {
+  width: 95%;
+  max-width: 860px;
+  background-color: #fff;
+  padding: 50px 60px;
+}
+body.find-item .title {
+  margin-bottom: 25px;
+}
+body.find-item .title h1 {
+  font-weight: 400;
+  font-size: 28px;
+}
+body.find-item .form_table {
+  width: 100%;
+}
+body.find-item .form_table th, body.find-item .form_table td {
+  padding: 10px 0;
+  border-bottom: solid 1px #eee;
+  color: #999;
+}
+body.find-item .form_table tr:first-child th, body.find-item .form_table tr:first-child td {
+  border-top: solid 1px #ccc;
+}
+body.find-item .form_table tr:last-child th, body.find-item .form_table tr:last-child td {
+  border-bottom: solid 1px #ccc;
+}
+body.find-item .form_table th {
+  width: 140px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
+}
+body.find-item .form_table a.btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  height: 46px;
+  vertical-align: top;
+}
+body.find-item .form_table input {
+  width: 95%;
+  height: 46px;
+  padding: 10px;
+  display: inline-block;
+}
+body.find-item .form_table input.size-medium {
+  max-width: 254px;
+}
+body.find-item .form_table input.size-small {
+  max-width: 92px;
+}
+body.find-item .form_table td ._desc {
+  font-size: 14px;
+  color: #999;
+  padding-left: 10px;
+}
+body.find-item .form_table td ._desc.bottom {
+  padding-left: 0;
+  margin-top: 8px;
+}
+body.find-item .form_table td a {
+  margin-left: 10px;
+}
+body.find-item .form_desc {
+  margin-top: 8px;
+  color: #d4000f;
+  font-size: 14px;
+}
+body.find-item .btn_grp {
+  margin-top: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body.find-item .btn_grp a:first-child {
+  margin-right: 20px;
+}
+body.find-item .post_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+  height: 175px;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+}
+body.find-item .post_wrap p {
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.8;
+}
+body.find-item .post_wrap p a {
+  text-decoration: underline;
+  font-size: 20px;
+}
+body.find-item .post_wrap p a:hover {
+  color: #d4000f;
+}
+body.find-item.complete .btn_grp a.btn {
+  max-width: 150px;
+  padding: 8px 20px;
+  width: 100%;
+  height: 46px;
+  text-align: center;
+}
+body.find-item.find_pw .find_pw_wrap {
+  width: 95%;
+  max-width: 860px;
+  background-color: #fff;
+  padding: 50px 60px;
+}
+body.find-item.find_pw .post_wrap {
+  height: 140px;
+}
+
+body.mypage .page_header .parent_menu {
+  display: none;
+}
+body.mypage .justify-content-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body.mypage .article_table th {
+  width: 190px;
+  height: 76px;
+  padding: 10px 38px;
+  text-align: left;
+}
+body.mypage .article_table td {
+  padding: 10px 30px;
+  height: 76px;
+  text-align: left;
+}
+body.mypage .article_table td.email {
+  color: #999;
+}
+body.mypage .article_table a.btn {
+  font-size: 14px;
+  vertical-align: top;
+}
+body.mypage .article_table a.btn.btn_light, body.mypage .article_table a.btn.btn_border_box {
+  width: 135px;
+  padding: 12px;
+}
+body.mypage .article_table a.btn.ml-1 {
+  margin-left: 10px;
+}
+body.mypage .article_table input {
+  height: 46px;
+}
+body.mypage .article_table input.size-small {
+  max-width: 150px;
+}
+body.mypage .article_table a.link {
+  text-decoration: underline;
+}
+body.mypage .article_btn_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body.mypage .article_btn_wrap a.btn {
+  width: 140px;
+  padding: 15px;
 }

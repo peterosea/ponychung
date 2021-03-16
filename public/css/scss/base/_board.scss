@@ -28,6 +28,31 @@
 .filter_wrap {
     margin-bottom: 32px;
 }
+.require {
+    &:after {
+        content:'';
+        width:7px;
+        height:7px;
+        background-image: url('#{$urlImg}/ic_require.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        display:inline-block;
+        padding: 4px 9px;
+        margin-bottom: 3px;
+    }
+}
+.form_desc {
+    &:before {
+        content:'';
+        width:7px;
+        height:7px;
+        background-image: url('#{$urlImg}/ic_require.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        display:inline-block;
+        padding: 4px 9px 4px 0;
+    }
+}
 // 게시판 리스트
 .borad_wrap {
     .table_list {
