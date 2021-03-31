@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  was:
+    image: php:8.0.0-apache
+    container_name: WS__ponychung
+    restart: always
+    ports:
+      - 40007:80
+    volumes:
+      - ../:/var/www/html/

@@ -1,135 +1,138 @@
 body.find-item {
-    .content_container {
-        max-height: 900px;
-        height: calc(90vh - 138px);
-        .container {
-            padding:80px 0;
-        }
+  .content_container {
+    max-height: 900px;
+    height: calc(90vh - 138px);
+    .container {
+      padding: 80px 0;
     }
-    .find_id_wrap {
-        width:95%;
-        max-width: 860px;
-        background-color:#fff;
-        padding:50px 60px;
+  }
+  .find_id_wrap {
+    width: 95%;
+    max-width: 860px;
+    background-color: #fff;
+    padding: 50px 60px;
+  }
+  .title {
+    margin-bottom: 25px;
+    h1 {
+      font-weight: 400;
+      font-size: 28px;
     }
-    .title {
-        margin-bottom: 25px;
-        h1 {
-            font-weight:400;
-            font-size: 28px;
-        }
+  }
+  .form_table {
+    width: 100%;
+    th,
+    td {
+      padding: 10px 0;
+      border-bottom: solid 1px $grey-e;
+      color: $grey-nine;
     }
-    .form_table {
-        width: 100%;
-        th, td {
-            padding: 10px 0;
-            border-bottom: solid 1px $grey-e;
-            color: $grey-nine;
-        }
-        tr:first-child {
-            th, td {
-                border-top: solid 1px $grey-c;
-            }
-        }
-        tr:last-child {
-            th, td {
-                border-bottom: solid 1px $grey-c;
-            }
-        }
-        th {
-            width:140px;
-            font-size: $size-p;
-            font-weight: 700;
-            color:$black;
-        }
-        a.btn {
-            padding:10px 20px;
-            font-size: 14px;
-            height: 46px;
-            vertical-align: top;
-        }
-        input {
-            width:95%;
-            height: 46px;
-            padding:10px;
-            display: inline-block;
-            &.size-medium {
-                max-width: 254px;
-            }
-            &.size-small {
-                max-width: 92px;
-            }
-        }
-        td {
-            ._desc {
-                font-size: 14px;
-                color:$grey-nine;
-                padding-left: 10px;
-                &.bottom {
-                    padding-left: 0;
-                    margin-top:8px;
-                }
-            }
-            a {
-                margin-left: 10px;
-            }
-        }
+    tr:first-child {
+      th,
+      td {
+        border-top: solid 1px $grey-c;
+      }
     }
-    .form_desc {
-        margin-top:8px;
-        color: $red;
+    tr:last-child {
+      th,
+      td {
+        border-bottom: solid 1px $grey-c;
+      }
+    }
+    th {
+      width: 140px;
+      font-size: $size-p;
+      font-weight: 700;
+      color: $black;
+    }
+    a.btn {
+      padding: 10px 20px;
+      font-size: 14px;
+      height: 46px;
+      vertical-align: top;
+    }
+    input {
+      width: 95%;
+      height: 46px;
+      padding: 10px;
+      display: inline-block;
+      &.size-medium {
+        max-width: 254px;
+      }
+      &.size-small {
+        max-width: 92px;
+      }
+    }
+    td {
+      ._desc {
         font-size: 14px;
-    }
-    .btn_grp {
-        margin-top: 50px;
-        justify-content: center;
-        display: flex;
-        a:first-child {
-            margin-right: 20px;
+        color: $grey-nine;
+        padding-left: 10px;
+        &.bottom {
+          padding-left: 0;
+          margin-top: 8px;
         }
+      }
+      a {
+        margin-left: 10px;
+      }
+    }
+  }
+  .form_desc {
+    margin-top: 8px;
+    color: $red;
+    font-size: 14px;
+  }
+  .btn_grp {
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    a:first-child {
+      margin-right: 20px;
+    }
+  }
+  .post_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    height: 175px;
+    border-top: solid 1px $grey-c;
+    border-bottom: solid 1px $grey-c;
+    p {
+      text-align: left;
+      font-size: 20px;
+      line-height: 1.8;
+      a {
+        text-decoration: underline;
+        font-size: 20px;
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+  &.complete {
+    .btn_grp {
+      a.btn {
+        max-width: 150px;
+        padding: 8px 20px;
+        width: 100%;
+        height: 46px;
+        text-align: center;
+      }
+    }
+  }
+  // 비밀번호 찾기
+  &.find_pw {
+    .find_pw_wrap {
+      width: 95%;
+      max-width: 860px;
+      background-color: #fff;
+      padding: 50px 60px;
     }
     .post_wrap {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        padding:40px;
-        height:175px;
-        border-top: solid 1px $grey-c;
-        border-bottom: solid 1px $grey-c;
-        p {
-            text-align: left;
-            font-size: 20px;
-            line-height: 1.8;
-            a {
-                text-decoration: underline;
-                font-size: 20px;
-                &:hover {
-                    color: $red;
-                }
-            }
-        }
+      height: 140px;
     }
-    &.complete {
-        .btn_grp {
-            a.btn {
-                max-width: 150px;
-                padding: 8px 20px;
-                width:100%;
-                height: 46px;
-                text-align: center;
-            }
-        }
-    }
-    // 비밀번호 찾기
-    &.find_pw {
-        .find_pw_wrap {
-            width:95%;
-            max-width: 860px;
-            background-color:#fff;
-            padding:50px 60px;
-        }
-        .post_wrap {
-            height:140px;
-        }
-    }
+  }
 }
