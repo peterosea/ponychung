@@ -156,7 +156,7 @@ $urlParent = '../';
           <a href="#" class="page_link go_first">처음으로</a>
         </div>
         <div class="btn_wrap">
-          <a href="/pages/board-write.php" class="btn btn_box btn_dark">글쓰기</a>
+          <a href="/pages/public_announcement_management-editor.php" class="btn btn_box btn_dark">공고 등록</a>
         </div>
       </div>
     </div>
