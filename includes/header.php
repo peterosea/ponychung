@@ -84,7 +84,7 @@
               <a href="#">학술지원</a>
             </li>
             <li class="item">
-              <a href="#">지원서 관리</a>
+              <a href="/pages/app-management-list.php">지원서 관리</a>
             </li>
           </ul>
         </li>

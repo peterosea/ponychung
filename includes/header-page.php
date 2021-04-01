@@ -25,7 +25,7 @@ if (strpos($page_name, 'public_announcement_management') !== false) {
   $backgroundImg = 'headerbg-application.jpg';
 }
 
-
+// 지원서작성
 if (strpos($page_name, 'app_write') !== false) {
   $parentMenu = '지원서 작성';
   $currentCat = '장학';
@@ -38,6 +38,22 @@ if (strpos($page_name, 'app_state') !== false) {
   $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
   $backgroundImg = 'headerbg-app_state.jpg';
 }
+if (strpos($page_name, 'app_management') !== false) {
+  $parentMenu = '지원서작성';
+  $currentCat = '공고관리';
+  $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
+  $backgroundImg = 'headerbg-application.jpg';
+}
+
+// 회원관리
+if (strpos($page_name, 'member') !== false) {
+  $parentMenu = '회원관리';
+  $currentCat = '회원리스트';
+  $currentDesc = '모든 회원을 등록하고 검색할 수 있습니다.';
+  $backgroundImg = 'member.jpg';
+}
+
+// etc
 if (strpos($page_name, 'community') !== false) {
   $parentMenu = '커뮤니티';
   $currentCat = '공지사항';
@@ -54,12 +70,6 @@ if (strpos($page_name, 'mypage') !== false) {
   $currentCat = '마이페이지';
   $currentDesc = '계정에 대한 기본 정보 확인 및 수정이 가능합니다.';
   $backgroundImg = 'headerbg-mypage.jpg';
-}
-if (strpos($page_name, 'member') !== false) {
-  $parentMenu = '회원관리';
-  $currentCat = '회원리스트';
-  $currentDesc = '모든 회원을 등록하고 검색할 수 있습니다.';
-  $backgroundImg = 'member.jpg';
 }
 ?>
 
