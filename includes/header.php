@@ -78,10 +78,10 @@
         <li class="item">
           <ul class="submenu">
             <li class="item">
-              <a href="#">장학</a>
+              <a href="/pages/app_write-list.php">장학</a>
             </li>
             <li class="item">
-              <a href="/pages/application-list.php">학술지원</a>
+              <a href="#">학술지원</a>
             </li>
             <li class="item">
               <a href="#">지원서 관리</a>
@@ -165,10 +165,10 @@
         </a>
         <ul class="submenu">
           <li class="item">
-            <a href="#">장학</a>
+            <a href="/pages/app_write-list.php">장학</a>
           </li>
           <li class="item">
-            <a href="/pages/application-list.php">학술지원</a>
+            <a href="#">학술지원</a>
           </li>
           <li class="item">
             <a href="#">지원서 관리</a>

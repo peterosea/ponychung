@@ -22,7 +22,7 @@ body.app_write.subpage {
   }
   .article_title {
     padding: 45px 40px;
-    border: solid 1px $grey-c;
+    border: solid 1px #222;
     background-color: #ffffff;
     ._classify {
       font-size: $size-p;
@@ -113,6 +113,9 @@ body.app_write.subpage {
         margin-bottom: 20px;
       }
     }
+  }
+  .guide {
+    margin-top: 30px;
   }
   .article_foot {
     margin-top: 30px;

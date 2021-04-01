@@ -47,8 +47,8 @@ if (strpos($page_name, 'member') !== false) {
   $backgroundImg = 'member.jpg';
 }
 if (strpos($page_name, 'public_announcement_management') !== false) {
-  $parentMenu = '공고관리';
-  $currentCat = '지원공고';
+  $parentMenu = '지원공고';
+  $currentCat = '공고관리';
   $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
   $backgroundImg = 'headerbg-application.jpg';
 }

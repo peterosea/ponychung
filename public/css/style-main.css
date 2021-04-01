@@ -1668,7 +1668,7 @@ body.app_write.subpage .table_list ._period .btn {
 
 body.app_write.subpage .article_title {
   padding: 45px 40px;
-  border: solid 1px #ccc;
+  border: solid 1px #222;
   background-color: #ffffff;
 }
 
@@ -1784,6 +1784,10 @@ body.app_write.subpage .article_body .write_grp:last-child {
 body.app_write.subpage .article_body .write_grp ._option {
   font-size: 18px;
   margin-bottom: 20px;
+}
+
+body.app_write.subpage .guide {
+  margin-top: 30px;
 }
 
 body.app_write.subpage .article_foot {
