@@ -1,10 +1,10 @@
 <?php $page_name = 'home'; ?>
 
 <!-- Head Load -->
-<?php include '../includes/head.php' ?>
+<?php include 'includes/head.php' ?>
 
 <!-- Header Load -->
-<?php include '../includes/header.php' ?>
+<?php include 'includes/header.php' ?>
 <!-- /.Header Load -->
 
 <!-- Content Container -->

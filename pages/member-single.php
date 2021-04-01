@@ -25,7 +25,7 @@ $urlParent = '../';
                 </td>
                 <th class="d-none d-xl-table-cell">구분</th>
                 <td class="d-none d-xl-table-cell">
-                  <div class="dropdown">
+                  <div class="dropdown py-2">
                     <button class="btn btn-secondary dropdown-toggle w220" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                       전체
                     </button>
@@ -41,7 +41,7 @@ $urlParent = '../';
               <tr class="d-table-row d-xl-none">
                 <th>구분</th>
                 <td>
-                  <div class="dropdown">
+                  <div class="dropdown py-2">
                     <button class="btn btn-secondary dropdown-toggle w220" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                       전체
                     </button>

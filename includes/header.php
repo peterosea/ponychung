@@ -68,10 +68,10 @@
               <a href="#">장학</a>
             </li>
             <li class="item">
-              <a href="#">학술지원</a>
+              <a href="/pages/application-list.php">학술지원</a>
             </li>
             <li class="item">
-              <a href="#">공고 관리</a>
+              <a href="/pages/public_announcement_management-list.php">공고 관리</a>
             </li>
           </ul>
         </li>
@@ -81,7 +81,7 @@
               <a href="#">장학</a>
             </li>
             <li class="item">
-              <a href="#">학술지원</a>
+              <a href="/pages/application-list.php">학술지원</a>
             </li>
             <li class="item">
               <a href="#">지원서 관리</a>
@@ -152,10 +152,10 @@
             <a href="#">장학</a>
           </li>
           <li class="item">
-            <a href="#">학술지원</a>
+            <a href="/pages/application-list.php">학술지원</a>
           </li>
           <li class="item">
-            <a href="#">공고 관리</a>
+            <a href="/pages/public_announcement_management-list.php">공고 관리</a>
           </li>
         </ul>
       </li>
@@ -168,7 +168,7 @@
             <a href="#">장학</a>
           </li>
           <li class="item">
-            <a href="#">학술지원</a>
+            <a href="/pages/application-list.php">학술지원</a>
           </li>
           <li class="item">
             <a href="#">지원서 관리</a>

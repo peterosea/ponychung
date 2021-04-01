@@ -46,6 +46,12 @@ if (strpos($page_name, 'member') !== false) {
   $currentDesc = '모든 회원을 등록하고 검색할 수 있습니다.';
   $backgroundImg = 'member.jpg';
 }
+if (strpos($page_name, 'public_announcement_management') !== false) {
+  $parentMenu = '공고관리';
+  $currentCat = '지원공고';
+  $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
+  $backgroundImg = 'headerbg-application.jpg';
+}
 ?>
 
 <div class="page_header" style="background-image:url(<?php echo $imgURL . $backgroundImg; ?>);">

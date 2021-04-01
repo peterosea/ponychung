@@ -1,5 +1,5 @@
 <?php
-$page_name = 'member subpage';
+$page_name = 'public_announcement_management_list subpage';
 $urlParent = '../';
 ?>
 
@@ -15,27 +15,40 @@ $urlParent = '../';
   <div class="container con_width flex_col">
     <div class="row">
       <div class="filter_wrap">
-        <div class="row align-items-center">
-          <div class="col col-lg-9 flex_row filter_grp">
+        <div class="row">
+          <div class="col col-lg-9 flex_row filter_grp justify-content-start">
             <div class="dropdown py-2">
-              <button class="btn btn-secondary dropdown-toggle w220" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                전체
+              <button class="btn btn-secondary dropdown-toggle w170" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                타입
               </button>
-              <ul class="dropdown-menu w220" aria-labelledby="dropdownMenuButton1">
+              <ul class="dropdown-menu w170" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href="#">전체</a></li>
-                <li><a class="dropdown-item" href="#">일반 사용자</a></li>
-                <li><a class="dropdown-item" href="#">심사위원</a></li>
-                <li><a class="dropdown-item" href="#">관리자</a></li>
+                <li><a class="dropdown-item" href="#">학술지원</a></li>
+                <li><a class="dropdown-item" href="#">장학</a></li>
               </ul>
             </div>
             <div class="dropdown py-2">
-              <button class="btn btn-secondary dropdown-toggle w220" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                사용자 ID
+              <button class="btn btn-secondary dropdown-toggle w170" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                구분 1
               </button>
-              <ul class="dropdown-menu w220" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">User0988</a></li>
-                <li><a class="dropdown-item" href="#">User0988</a></li>
-                <li><a class="dropdown-item" href="#">User0988</a></li>
+              <ul class="dropdown-menu w170" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">전체</a></li>
+                <li><a class="dropdown-item" href="#">국내장학슴</a></li>
+                <li><a class="dropdown-item" href="#">베트남 장학금</a></li>
+                <li><a class="dropdown-item" href="#">특별 장학금</a></li>
+                <li><a class="dropdown-item" href="#">신진연구자지원</a></li>
+                <li><a class="dropdown-item" href="#">한국학 지원구분</a></li>
+              </ul>
+            </div>
+            <div class="dropdown py-2">
+              <button class="btn btn-secondary dropdown-toggle w170" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                구분 2
+              </button>
+              <ul class="dropdown-menu w170" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">전체</a></li>
+                <li><a class="dropdown-item" href="#">포니정해외 학술탐방단</a></li>
+                <li><a class="dropdown-item" href="#">포니정인문연구장학</a></li>
+                <li><a class="dropdown-item" href="#">기존장학</a></li>
               </ul>
             </div>
             <div class="search_box input-group py-2">
@@ -61,44 +74,44 @@ $urlParent = '../';
         <table class="table_list theme_red">
           <thead>
             <tr>
+              <th>번호</th>
+              <th>타입</th>
               <th>구분</th>
-              <th>고객 ID</th>
-              <th>고객명</th>
-              <th>사용여부</th>
-              <th>전화번호</th>
-              <th>이메일</th>
+              <th>상태</th>
+              <th>제목</th>
+              <th>지원 기간</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="_cat">일반 사용자</td>
-              <td class="_userId">
-                <a href="/pages/member-single.php">User0988</a>
+            <tr class="tr_notice">
+              <td class="_num">3</td>
+              <td class="_type">학술지원</td>
+              <td class="_classify">한국학 지원</td>
+              <td class="_state">모집중</td>
+              <td class="_title">
+                <a href="/pages/public_announcement_management-single.php">제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</a>
               </td>
-              <td class="_name">테스터</td>
-              <td class="_isUse">사용</td>
-              <td class="_tel">010-2223-2547</td>
-              <td class="_email">user@test.com</td>
+              <td class="_period">2021.02.28 - 2021.03.28</td>
             </tr>
             <tr>
-              <td class="_cat">심사위원</td>
-              <td class="_userId">
-                <a href="/pages/member-single.php">User0988</a>
+              <td class="_num">2</td>
+              <td class="_type">학술지원</td>
+              <td class="_classify">국내장학금 - 포니정해외학술탐방안</td>
+              <td class="_state">완료</td>
+              <td class="_title">
+                <a href="/pages/public_announcement_management-single.php">제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</a>
               </td>
-              <td class="_name">김교수</td>
-              <td class="_isUse">미사용</td>
-              <td class="_tel">010-2223-2547</td>
-              <td class="_email">user@test.com</td>
+              <td class="_period">2021.02.28 - 2021.03.28</td>
             </tr>
             <tr>
-              <td class="_cat">관리자</td>
-              <td class="_userId">
-                <a href="/pages/member-single.php">User0988</a>
+              <td class="_num">1</td>
+              <td class="_type">학술지원</td>
+              <td class="_classify">신진연구자 지원</td>
+              <td class="_state">완료</td>
+              <td class="_title">
+                <a href="/pages/public_announcement_management-single.php">2020 포니정재단 학술지원 연구과제 공모 (+FAQ) 안내</a>
               </td>
-              <td class="_name">관리자</td>
-              <td class="_isUse">사용</td>
-              <td class="_tel">010-2223-2547</td>
-              <td class="_email">user@test.com</td>
+              <td class="_period">2021.02.28 - 2021.03.28</td>
             </tr>
           </tbody>
         </table>

@@ -17,13 +17,13 @@ $urlParent = '../';
       <div class="filter_wrap">
         <div class="row align-items-center">
           <div class="col col-lg-6 flex_row filter_grp">
-            <div class="search_box input-group">
+            <div class="search_box input-group py-2">
               <input type="text" class="form-control" placeholder="검색어를 입력해주세요" aria-label="검색어를 입력해주세요" aria-describedby="button-addon2">
               <button class="btn btn-outline-secondary" type="button" id="button-addon2">검색</button>
             </div>
           </div>
           <div class="col col-lg-6 flex_row justify-content-end">
-            <div class="dropdown">
+            <div class="dropdown py-2">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 항목 갯수
               </button>

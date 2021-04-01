@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="/public/img/favicon.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -36,10 +37,12 @@
     transition: fill 0.3s ease-in-out;
   }
 
-  .name {
+  .name .value,
+  .name.value {
     color: #FDBD3A;
     font-weight: 500;
   }
+
 
   svg:hover path {
     fill: #FDBD3A;
@@ -63,6 +66,10 @@
       fill: #49D294;
     }
   }
+
+  table th {
+    padding-right: 12px
+  }
 </style>
 
 <body>
@@ -81,13 +88,24 @@
           </a>
         </div>
         <div class="name">
-          @Hansanghyeon, @Seunghan-Lee
+          <table>
+            <tbody>
+              <tr>
+                <th>Main</th>
+                <td class="value">@Seunghan-Lee</td>
+              </tr>
+              <tr>
+                <th>support</th>
+                <td class="value">@Hansanghyeon</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
     <div class="row mb-4">
       <div class="col-12">
-        <div class="name">@Hansanghyeon</div>
+        <div class="name value mb-2">@Hansanghyeon</div>
         <ul>
           <li>
             <a target="_blank" href="/pages/member-list.php">회원관리</a>
@@ -101,6 +119,13 @@
             <div>
               UUM0002<br />
               PPT: 17
+            </div>
+          </li>
+          <li>
+            <a target="_blank" href="/pages/public_announcement_management-list.php">지원공고 > 공고관리</a>
+            <div>
+              AAM0001<br />
+              PPT: 23
             </div>
           </li>
         </ul>

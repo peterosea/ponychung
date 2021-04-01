@@ -184,6 +184,10 @@ b.point {
   width: 220px;
 }
 
+.w170 {
+  width: 170px;
+}
+
 .filter_grp > div {
   margin-right: 10px;
 }
@@ -212,7 +216,7 @@ b.point {
 }
 
 .filter_wrap {
-  margin-bottom: 32px;
+  margin-bottom: calc(32px - 0.5rem);
 }
 
 .require:after {
@@ -744,6 +748,23 @@ ul.dropdown-menu .dropdown-item {
 
 .btn_burger:hover span {
   background-color: #efaaaa;
+}
+
+body.subpage .pagination.with_button {
+  position: relative;
+}
+
+body.subpage .pagination.with_button .inner {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body.subpage .pagination.with_button .btn_wrap {
+  position: absolute;
+  top: -9px;
+  right: 12px;
 }
 
 body.home .body_container {
@@ -1791,23 +1812,6 @@ body.app_state.subpage ._result_black {
   color: #222222;
 }
 
-body.board.subpage .pagination.with_button {
-  position: relative;
-}
-
-body.board.subpage .pagination.with_button .inner {
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body.board.subpage .pagination.with_button .btn_wrap {
-  position: absolute;
-  top: -9px;
-  right: 12px;
-}
-
 body.board.subpage .article_head .article_table th:first-child,
 body.board.subpage .article_head .article_table td:first-child {
   width: 12%;
@@ -2488,23 +2492,6 @@ body.mypage .article_btn_wrap a.btn {
 
 body.member.subpage .page_header .parent_menu {
   display: none;
-}
-
-body.member.subpage .pagination.with_button {
-  position: relative;
-}
-
-body.member.subpage .pagination.with_button .inner {
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body.member.subpage .pagination.with_button .btn_wrap {
-  position: absolute;
-  top: -9px;
-  right: 12px;
 }
 
 @media screen and (min-width: 1200px) {
