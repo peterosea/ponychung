@@ -5,12 +5,27 @@ $currentDesc = '';
 $backgroundImg = '';
 $imgURL = '../public/img/';
 
+// 지원공고
 if (strpos($page_name, 'application') !== false) {
   $parentMenu = '지원공고';
   $currentCat = '학술지원';
   $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
   $backgroundImg = 'headerbg-application.jpg';
 }
+if (strpos($page_name, 'scholarship') !== false) {
+  $parentMenu = '지원공고';
+  $currentCat = '장학';
+  $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
+  $backgroundImg = 'headerbg-application.jpg';
+}
+if (strpos($page_name, 'public_announcement_management') !== false) {
+  $parentMenu = '지원공고';
+  $currentCat = '공고관리';
+  $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
+  $backgroundImg = 'headerbg-application.jpg';
+}
+
+
 if (strpos($page_name, 'app_write') !== false) {
   $parentMenu = '지원서 작성';
   $currentCat = '장학';
@@ -45,12 +60,6 @@ if (strpos($page_name, 'member') !== false) {
   $currentCat = '회원리스트';
   $currentDesc = '모든 회원을 등록하고 검색할 수 있습니다.';
   $backgroundImg = 'member.jpg';
-}
-if (strpos($page_name, 'public_announcement_management') !== false) {
-  $parentMenu = '지원공고';
-  $currentCat = '공고관리';
-  $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
-  $backgroundImg = 'headerbg-application.jpg';
 }
 ?>
 
