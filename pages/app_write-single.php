@@ -118,7 +118,7 @@ $urlParent = '../';
       <div class="col">
         <a href="#" class="btn btn_box btn_dark">저장</a>
         <a href="#" class="btn btn_box btn_red">지원하기</a>
-        <a href="app_write-list.php" class="btn btn_box btn_light">목록보기</a>
+        <a href="/pages/app_write-list.php" class="btn btn_box btn_light">목록보기</a>
       </div>
     </div>
   </div>

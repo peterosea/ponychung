@@ -89,7 +89,7 @@ $urlParent = '../';
               <td class="_classify">한국학 지원</td>
               <td class="_state">모집중</td>
               <td class="_title">
-                <a href="/pages/public_announcement_management-single.php">제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</a>
+                <a href="/pages/app-management-single.php">제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</a>
               </td>
               <td class="_period">2021.02.28 - 2021.03.28</td>
             </tr>
@@ -99,7 +99,7 @@ $urlParent = '../';
               <td class="_classify">국내장학금 - 포니정해외학술탐방안</td>
               <td class="_state">완료</td>
               <td class="_title">
-                <a href="/pages/public_announcement_management-single.php">제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</a>
+                <a href="/pages/app-management-single.php">제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</a>
               </td>
               <td class="_period">2021.02.28 - 2021.03.28</td>
             </tr>
@@ -109,7 +109,7 @@ $urlParent = '../';
               <td class="_classify">신진연구자 지원</td>
               <td class="_state">완료</td>
               <td class="_title">
-                <a href="/pages/public_announcement_management-single.php">2020 포니정재단 학술지원 연구과제 공모 (+FAQ) 안내</a>
+                <a href="/pages/app-management-single.php">2020 포니정재단 학술지원 연구과제 공모 (+FAQ) 안내</a>
               </td>
               <td class="_period">2021.02.28 - 2021.03.28</td>
             </tr>
@@ -156,7 +156,7 @@ $urlParent = '../';
           <a href="#" class="page_link go_first">처음으로</a>
         </div>
         <div class="btn_wrap">
-          <a href="/pages/public_announcement_management-editor.php" class="btn btn_box btn_dark">공고 등록</a>
+          <a href="/pages/public_announcement_management-editor.php" class="btn btn_box btn_dark">지원서 등록</a>
         </div>
       </div>
     </div>

@@ -31,7 +31,7 @@
             <span>지원공고</span>
           </a>
         </li>
-        <li class="item <?php if (strpos($page_name, 'app_write') !== false) {
+        <li class="item <?php if (strpos($page_name, 'app_write') !== false || strpos($page_name, 'app_management') !== false) {
                           echo 'current';
                         } ?>">
           <a href="/pages/app_write-list.php">
@@ -171,7 +171,7 @@
             <a href="#">학술지원</a>
           </li>
           <li class="item">
-            <a href="#">지원서 관리</a>
+            <a href="/pages/app-management-list.php">지원서 관리</a>
           </li>
         </ul>
       </li>

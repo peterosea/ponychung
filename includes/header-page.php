@@ -40,9 +40,9 @@ if (strpos($page_name, 'app_state') !== false) {
 }
 if (strpos($page_name, 'app_management') !== false) {
   $parentMenu = '지원서작성';
-  $currentCat = '공고관리';
+  $currentCat = '지원서 관리';
   $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
-  $backgroundImg = 'headerbg-application.jpg';
+  $backgroundImg = 'headerbg-app_write.jpg';
 }
 
 // 회원관리

@@ -2532,3 +2532,154 @@ body.public_announcement_management_editor .range {
   color: #aaa;
   padding: 0 20px;
 }
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  body.app_management input[type="checkbox"] {
+    --active: #d4000f;
+    --active-inner: #999999;
+    --focus: 2px rgba(#d2333f, 0.3);
+    --border: #999999;
+    --border-hover: #de666f;
+    --background: #fff;
+    --disabled: #f6f8ff;
+    --disabled-inner: #e8a5ac;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 2px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    -webkit-transition: background 0.3s, border-color 0.3s, -webkit-box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, -webkit-box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  }
+  body.app_management input[type="checkbox"]:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+  }
+  body.app_management input[type="checkbox"]:checked {
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: 0.3s;
+    --d-t: 0.6s;
+    --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  }
+  body.app_management input[type="checkbox"]:disabled {
+    --b: var(--disabled);
+    cursor: not-allowed;
+    opacity: 0.9;
+  }
+  body.app_management input[type="checkbox"]:disabled:checked {
+    --b: var(--disabled-inner);
+    --bc: var(--border);
+  }
+  body.app_management input[type="checkbox"]:disabled + label {
+    cursor: not-allowed;
+  }
+  body.app_management input[type="checkbox"]:hover:not(:checked):not(:disabled) {
+    --bc: var(--border-hover);
+  }
+  body.app_management input[type="checkbox"]:focus {
+    -webkit-box-shadow: 0 0 0 var(--focus);
+            box-shadow: 0 0 0 var(--focus);
+  }
+  body.app_management input[type="checkbox"]:not(.switch) {
+    width: 34px;
+    height: 34px;
+  }
+  body.app_management input[type="checkbox"]:not(.switch):checked {
+    --active-inner: #fff;
+  }
+  body.app_management input[type="checkbox"] + label {
+    line-height: 34px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  body.app_management input[type="checkbox"]:not(.switch) {
+    border-radius: 4px;
+  }
+  body.app_management input[type="checkbox"]:not(.switch):after {
+    width: 9px;
+    height: 13px;
+    border: 2px solid var(--active-inner);
+    border-top: 0;
+    border-left: 0;
+    left: 10px;
+    top: 7px;
+    -webkit-transform: rotate(43deg);
+            transform: rotate(43deg);
+  }
+}
+
+body.app_management .article_title {
+  padding: 45px 40px;
+  border: solid 1px #222;
+  background-color: #ffffff;
+}
+
+body.app_management .article_title ._classify {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+body.app_management .article_title h2._title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+body.app_management .article_title ._period {
+  color: #666;
+}
+
+body.app_management .article_title .col:last-child {
+  font-size: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body.app_management .article_body {
+  margin-top: 50px;
+}
+
+body.app_management .article_body .write_grp {
+  margin-bottom: 50px;
+}
+
+body.app_management .article_body .write_grp:last-child {
+  margin-bottom: 0;
+}
+
+body.app_management .article_body .write_grp ._option {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+body.app_management .checkboxWrap:not(:last-child) {
+  margin-right: 65px;
+}
+
+body.app_management .checkboxWrap {
+  display: inline-block;
+}
