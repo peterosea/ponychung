@@ -1,16 +1,15 @@
 <?php $page_name = 'home'; ?>
 
 <!-- Head Load -->
-<?php include 'includes/head.php' ?>
+<?php include '../includes/head.php' ?>
 
 <!-- Header Load -->
-<?php include 'includes/header.php' ?>
+<?php include '../includes/header.php' ?>
 <!-- /.Header Load -->
 
 <!-- Content Container -->
 <div class="content_container home_content">
   <div class="container main_width flex_row">
-    <!-- 진행중인 공고 -->
     <div class="col_1_3 col_3 sect_announce">
       <div class="inner_col flex_col">
         <!-- 카테고리 표시/선택 영역 -->
@@ -158,8 +157,8 @@
 <!-- /.Content Container -->
 
 <!-- Footer Load -->
-<?php include 'includes/footer.php' ?>
+<?php include '../includes/footer.php' ?>
 <!-- /.Footer Load -->
 
 <!-- Foot Load -->
-<?php include 'includes/foot.php' ?>
+<?php include '../includes/foot.php' ?>

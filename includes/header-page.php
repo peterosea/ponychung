@@ -40,6 +40,12 @@ if (strpos($page_name, 'mypage') !== false) {
   $currentDesc = '계정에 대한 기본 정보 확인 및 수정이 가능합니다.';
   $backgroundImg = 'headerbg-mypage.jpg';
 }
+if (strpos($page_name, 'member') !== false) {
+  $parentMenu = '회원관리';
+  $currentCat = '회원리스트';
+  $currentDesc = '모든 회원을 등록하고 검색할 수 있습니다.';
+  $backgroundImg = 'member.jpg';
+}
 ?>
 
 <div class="page_header" style="background-image:url(<?php echo $imgURL . $backgroundImg; ?>);">

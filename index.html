@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="notosanscjkkr.css">
+  <title>포니정재단 장학지원 시스템</title>
+</head>
+<style>
+  body {
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+    font-family: "NotoSansKR";
+    color: #24292E;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  svg path {
+    fill: #212121;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .name {
+    color: #FDBD3A;
+    font-weight: 500;
+  }
+
+  svg:hover path {
+    fill: #FDBD3A;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      color: #e8eaed;
+      background-color: #22272E;
+    }
+
+    svg path {
+      fill: #e8eaed;
+    }
+
+    .name {
+      color: #49D294;
+    }
+
+    svg:hover path {
+      fill: #49D294;
+    }
+  }
+</style>
+
+<body>
+  <div class="container py-5">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="linkWrap mb-2">
+          <a target="_blank" href="https://github.com/peterosea/ponychung" class="d-inline-block">
+            <div class="icon">
+              <?xml version="1.0"?>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                <path
+                  d="M 10 2 C 8.346 2 7 3.346 7 5 L 7 41 C 7 42.654 8.346 44 10 44 L 11 44 L 11 42 L 10 42 C 9.449 42 9 41.552 9 41 L 9 36 L 41 36 L 41 41 C 41 41.552 40.552 42 40 42 L 25 42 L 25 44 L 40 44 C 41.654 44 43 42.654 43 41 L 43 5 C 43 3.346 41.654 2 40 2 L 10 2 z M 14 8 L 18 8 L 18 12 L 14 12 L 14 8 z M 14 17 L 18 17 L 18 21 L 14 21 L 14 17 z M 14 26 L 18 26 L 18 30 L 14 30 L 14 26 z M 13 38 L 13 48.625 L 18 46.125 L 23 48.625 L 23 38 L 13 38 z" />
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="name">
+          @Hansanghyeon, @Seunghan-Lee
+        </div>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="name">@Hansanghyeon</div>
+        <ul>
+          <li>
+            <a target="_blank" href="/pages/member-list.php">회원관리</a>
+            <div>
+              UUM0001<br />
+              PPT: 16
+            </div>
+          </li>
+          <li>
+            <a target="_blank" href="/pages/member-single.php">회원관리 회원</a>
+            <div>
+              UUM0002<br />
+              PPT: 17
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

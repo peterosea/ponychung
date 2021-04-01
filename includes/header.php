@@ -52,6 +52,13 @@
             <span>커뮤니티</span>
           </a>
         </li>
+        <li class="item <?php if (strpos($page_name, 'member_management') !== false) {
+                          echo 'current';
+                        } ?>">
+          <a href="/pages/member-list.php">
+            <span>회원관리</span>
+          </a>
+        </li>
       </ul>
       <!-- PC 서브메뉴 -->
       <ul class="submenu_grp flex_row">
@@ -98,6 +105,16 @@
           <ul class="submenu">
             <li class="item">
               <a href="/pages/community-list.php">공지사항</a>
+            </li>
+            <li class="item">
+              <a href="/pages/board-list.php">게시판</a>
+            </li>
+          </ul>
+        </li>
+        <li class="item">
+          <ul class="submenu">
+            <li class="item">
+              <a href="/pages/member-list.php">회원리스트</a>
             </li>
             <li class="item">
               <a href="/pages/board-list.php">게시판</a>

@@ -8,4 +8,4 @@ services:
     ports:
       - 40007:80
     volumes:
-      - ../:/var/www/html/
+      - ./:/var/www/html/
