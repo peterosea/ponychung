@@ -5,6 +5,7 @@
 @import "base/board";
 @import "base/util";
 @import "base/button";
+@import "base/subpage";
 @import "partial/home";
 @import "partial/head";
 @import "partial/pageHeader";
@@ -18,3 +19,7 @@
 @import "partial/register";
 @import "partial/find_item";
 @import "partial/mypage";
+@import "partial/member";
+@import "partial/public_announcement_management";
+@import "partial/app_management";
+@import "partial/register_list";

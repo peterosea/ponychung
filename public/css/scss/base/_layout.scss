@@ -1,50 +1,56 @@
 // 콘텐트 영역
 .content_container {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding-top:100px;
-    padding-bottom:100px;
-    background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #fff;
 }
 .container {
-    display: flex;
-    padding:0;
+  display: flex;
+  padding: 0;
+  &.site_width {
+    width: 100%;
+    max-width: $siteWidth;
+  }
+  &.main_width {
+    width: 100%;
+    max-width: $mainWidth;
+  }
+  &.con_width {
+    width: 100%;
+    max-width: $conWidth;
+  }
+  @include respond-to("xxl") {
     &.site_width {
-        width: 100%;
-        max-width: $siteWidth;
+      max-width: 95%;
     }
     &.main_width {
-        width: 100%;
-        max-width: $mainWidth;
+      max-width: 95%;
     }
+  }
+  @include respond-to("wide") {
     &.con_width {
-        width: 100%;
-        max-width: $conWidth;
+      max-width: 95%;
     }
-    @include respond-to("xxl") {
-        &.site_width {
-            max-width: 95%;
-        }
-        &.main_width {
-            max-width: 95%;
-        }
-    }
-    @include respond-to("wide") {
-        &.con_width {
-            max-width: 95%;
-        }
-    }
+  }
 }
 .flex_row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .flex_col {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 // Width
 .w220 {
-    width:220px;
+  width: 220px;
+}
+.w170 {
+  max-width: 170px;
+}
+.w320 {
+  max-width: 320px;
 }

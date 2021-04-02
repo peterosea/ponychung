@@ -1,14 +1,14 @@
 body.etcpage {
-    .content_container {
-        padding-top: 91px;
-        padding-bottom: 0;
-        > .container {
-            justify-content: center;
-            align-items: center;
-        }
+  .content_container {
+    padding-top: 91px;
+    padding-bottom: 0;
+    > .container {
+      justify-content: center;
+      align-items: center;
     }
-    .form-control {
-        border:none;
-        background-color: #f3f3f3;
-    }
+  }
+  .form-control {
+    border: none;
+    background-color: #f3f3f3;
+  }
 }

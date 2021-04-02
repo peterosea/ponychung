@@ -1,0 +1,10 @@
+body.member.subpage {
+  .page_header .parent_menu {
+    display: none;
+  }
+  .col50 {
+    @media screen and (min-width: 1200px) {
+      width: 50%;
+    }
+  }
+}

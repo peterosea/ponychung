@@ -1,148 +1,150 @@
 body.register {
-    .content_container {
-        max-height: 900px;
-        height: calc(90vh - 138px);
+  .content_container {
+    max-height: 900px;
+    height: calc(90vh - 138px);
+  }
+  .register_wrap {
+    width: 95%;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 50px 60px;
+  }
+  .title {
+    padding-bottom: 25px;
+    margin-bottom: 12px;
+    border-bottom: solid 1px $grey-c;
+    display: flex;
+    align-items: center;
+    .parent_title {
+      font-size: 28px;
+      color: $grey-nine;
+      margin-right: 20px;
+      font-weight: 300;
     }
+    ._arrow {
+      width: 11px;
+      height: 19px;
+      margin-right: 20px;
+      display: inline-block;
+      background-image: url("#{$urlImg}/ic_arrow_right.svg");
+    }
+    h1 {
+      font-size: 21px;
+      color: $black;
+      font-weight: 700;
+    }
+  }
+  .term_wrap {
+    border-bottom: 1px solid $grey-e;
+    margin-bottom: 10px;
+    &:nth-child(2) {
+      border-bottom: 1px solid $grey-c;
+    }
+    ._title {
+      font-size: $size-p;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .text_wrap {
+      overflow-y: auto;
+      background-color: #eeeeee;
+      color: $black;
+      padding: 25px;
+      font-size: 14px;
+      max-height: 190px;
+      margin-bottom: 8px;
+    }
+    .agree_wrap {
+      color: $black;
+      margin-bottom: 10px;
+    }
+  }
+  .agree_whole_wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    .form-check {
+      display: inline-block;
+    }
+    .form-check-label {
+      font-size: $size-p;
+      font-weight: 700;
+    }
+  }
+  .btn_grp {
+    margin-top: 50px;
+    text-align: center;
+    a:first-child {
+      margin-right: 20px;
+    }
+  }
+  // 이용약관 동의
+  &.term_agree .content_container {
+    max-height: unset;
+    height: auto;
+    .container {
+      padding: 80px 0;
+    }
+  }
+  // 개인정보 입력
+  &.entry_form {
     .register_wrap {
-        width:95%;
-        max-width: 1000px;
-        background-color:#fff;
-        padding:50px 60px;
+      max-width: 860px;
+      .title {
+        margin-bottom: 0;
+      }
     }
-    .title {
-        padding-bottom: 25px;
-        margin-bottom: 12px;
-        border-bottom: solid 1px $grey-c;
-        display: flex;
-        align-items: center;
-        .parent_title {
-            font-size: 28px;
-            color: $grey-nine;
-            margin-right: 20px;
-            font-weight: 300;
+    .form_table {
+      width: 100%;
+      th,
+      td {
+        padding: 10px 0;
+        border-bottom: solid 1px $grey-e;
+        color: $grey-nine;
+      }
+      tr:last-child {
+        th,
+        td {
+          border-bottom: solid 1px $grey-c;
         }
-        ._arrow {
-            width: 11px;
-            height: 19px;
-            margin-right: 20px;
-            display: inline-block;
-            background-image: url('#{$urlImg}/ic_arrow_right.svg');
+      }
+      th {
+        width: 140px;
+        font-size: $size-p;
+        font-weight: 700;
+      }
+      a.btn {
+        padding: 10px 20px;
+        font-size: 14px;
+        height: 46px;
+        vertical-align: top;
+      }
+      input {
+        width: 95%;
+        height: 46px;
+        padding: 10px;
+        display: inline-block;
+        &.size-medium {
+          max-width: 254px;
         }
-        h1 {
-            font-size: 21px;
-            color: $black;
-            font-weight: 700;
+        &.size-small {
+          max-width: 92px;
         }
+      }
+      td {
+        ._desc {
+          font-size: 14px;
+          color: $grey-nine;
+          padding-left: 10px;
+          &.bottom {
+            padding-left: 0;
+            margin-top: 8px;
+          }
+        }
+        a {
+          margin-left: 10px;
+        }
+      }
     }
-    .term_wrap {
-        border-bottom: 1px solid $grey-e;
-        margin-bottom:10px;
-        &:nth-child(2){
-            border-bottom: 1px solid $grey-c;
-        }
-        ._title {
-            font-size: $size-p;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-        .text_wrap {
-            overflow-y: auto;
-            background-color: #eeeeee;
-            color: $black;
-            padding:25px;
-            font-size: 14px;
-            max-height: 190px;
-            margin-bottom: 8px;
-        }
-        .agree_wrap {
-            color: $black;
-            margin-bottom: 10px;
-        }
-    }
-    .agree_whole_wrap {
-        display: flex;
-        justify-content:center;
-        margin-top: 20px;
-        .form-check {
-            display: inline-block;
-        }
-        .form-check-label {
-            font-size: $size-p;
-            font-weight: 700;
-        }
-    }
-    .btn_grp {
-        margin-top:50px;
-        text-align: center;
-        a:first-child {
-            margin-right: 20px;
-        }
-    }
-    // 이용약관 동의
-    &.term_agree .content_container {
-        max-height: unset;
-        height: auto;
-        .container {
-            padding:80px 0;
-        }
-    }
-    // 개인정보 입력
-    &.entry_form {
-        .register_wrap {
-            max-width: 860px;
-            .title {
-                margin-bottom: 0;
-            }
-        }
-        .form_table {
-            width: 100%;
-            th, td {
-                padding: 10px 0;
-                border-bottom: solid 1px $grey-e;
-                color: $grey-nine;
-            }
-            tr:last-child {
-                th, td {
-                    border-bottom: solid 1px $grey-c;
-                }
-            }
-            th {
-                width:140px;
-                font-size: $size-p;
-                font-weight: 700;
-            }
-            a.btn {
-                padding:10px 20px;
-                font-size: 14px;
-                height: 46px;
-                vertical-align: top;
-            }
-            input {
-                width:95%;
-                height: 46px;
-                padding:10px;
-                display: inline-block;
-                &.size-medium {
-                    max-width: 254px;
-                }
-                &.size-small {
-                    max-width: 92px;
-                }
-            }
-            td {
-                ._desc {
-                    font-size: 14px;
-                    color:$grey-nine;
-                    padding-left: 10px;
-                    &.bottom {
-                        padding-left: 0;
-                        margin-top:8px;
-                    }
-                }
-                a {
-                    margin-left: 10px;
-                }
-            }
-        }
-    }
+  }
 }
