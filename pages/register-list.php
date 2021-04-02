@@ -69,7 +69,7 @@ $urlParent = '../';
             <tr>
               <td class="_num">4</td>
               <td class="_name">
-                <a href="/pages/application-single.php">김지원</a>
+                <a href="/pages/register-single.php">김지원</a>
               </td>
               <td class="_gender">남</td>
               <td class="_bachelor">카이스트</td>
@@ -85,7 +85,7 @@ $urlParent = '../';
             <tr>
               <td class="_num">3</td>
               <td class="_name">
-                <a href="/pages/application-single.php">이지원</a>
+                <a href="/pages/register-single.php">이지원</a>
               </td>
               <td class="_gender">남</td>
               <td class="_bachelor">연세대</td>
@@ -101,7 +101,7 @@ $urlParent = '../';
             <tr>
               <td class="_num">2</td>
               <td class="_name">
-                <a href="/pages/application-single.php">박지원</a>
+                <a href="/pages/register-single.php">박지원</a>
               </td>
               <td class="_gender">남</td>
               <td class="_bachelor">서울대</td>
@@ -117,7 +117,7 @@ $urlParent = '../';
             <tr>
               <td class="_num">1</td>
               <td class="_name">
-                <a href="/pages/application-single.php">최지원</a>
+                <a href="/pages/register-single.php">최지원</a>
               </td>
               <td class="_gender">남</td>
               <td class="_bachelor">한예종</td>
@@ -173,7 +173,7 @@ $urlParent = '../';
           <a href="#" class="page_link go_first">처음으로</a>
         </div>
         <div class="btn_wrap">
-          <a href="/pages/board-write.php" class="btn btn_box btn_light">공고 목록</a>
+          <a href="/pages/app_state-list.php" class="btn btn_box btn_light">공고 목록</a>
         </div>
       </div>
     </div>

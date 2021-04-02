@@ -1,4 +1,5 @@
-body.register_list {
+body.register_list,
+body.register_single {
   .article_title {
     padding: 45px 40px;
     border: solid 1px #222;
@@ -47,5 +48,13 @@ body.register_list {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  .article_tableWrap {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    ._option + .article_table {
+      margin-top: 20px;
+    }
   }
 }

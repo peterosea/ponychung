@@ -46,7 +46,7 @@ if (strpos($page_name, 'app_state') !== false) {
   $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
   $backgroundImg = 'headerbg-app_state.jpg';
 }
-if (strpos($page_name, 'register_list') !== false) {
+if (strpos($page_name, 'register_list') !== false || strpos($page_name, 'register_single') !== false) {
   $parentMenu = '지원현황';
   $currentCat = '접수 현황';
   $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';

@@ -38,7 +38,11 @@
             <span>지원서작성</span>
           </a>
         </li>
-        <li class="item <?php if (strpos($page_name, 'app_state') !== false) {
+        <li class="item <?php if (
+                          strpos($page_name, 'app_state') !== false ||
+                          strpos($page_name, 'register_list') !== false ||
+                          strpos($page_name, 'register_single') !== false
+                        ) {
                           echo 'current';
                         } ?>">
           <a href="/pages/app_state-list.php">

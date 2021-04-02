@@ -2684,28 +2684,33 @@ body.app_management .checkboxWrap {
   display: inline-block;
 }
 
-body.register_list .article_title {
+body.register_list .article_title,
+body.register_single .article_title {
   padding: 45px 40px;
   border: solid 1px #222;
   background-color: #ffffff;
   margin-bottom: 50px;
 }
 
-body.register_list .article_title ._classify {
+body.register_list .article_title ._classify,
+body.register_single .article_title ._classify {
   font-size: 16px;
   margin-bottom: 5px;
 }
 
-body.register_list .article_title h2._title {
+body.register_list .article_title h2._title,
+body.register_single .article_title h2._title {
   font-size: 24px;
   font-weight: 400;
 }
 
-body.register_list .article_title ._period {
+body.register_list .article_title ._period,
+body.register_single .article_title ._period {
   color: #666;
 }
 
-body.register_list .article_title .col:last-child {
+body.register_list .article_title .col:last-child,
+body.register_single .article_title .col:last-child {
   font-size: 16px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2718,11 +2723,13 @@ body.register_list .article_title .col:last-child {
   display: flex;
 }
 
-body.register_list .w320 {
+body.register_list .w320,
+body.register_single .w320 {
   width: 320px;
 }
 
-body.register_list .excel {
+body.register_list .excel,
+body.register_single .excel {
   padding-left: 28px;
   padding-right: 28px;
   color: #fff;
@@ -2740,7 +2747,8 @@ body.register_list .excel {
   margin-right: 10px;
 }
 
-body.register_list ._attachment a {
+body.register_list ._attachment a,
+body.register_single ._attachment a {
   display: block;
   margin: 0 auto;
   width: 14px;
@@ -2749,4 +2757,15 @@ body.register_list ._attachment a {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+body.register_list .article_tableWrap,
+body.register_single .article_tableWrap {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+body.register_list .article_tableWrap ._option + .article_table,
+body.register_single .article_tableWrap ._option + .article_table {
+  margin-top: 20px;
 }
