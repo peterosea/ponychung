@@ -30,17 +30,6 @@ $urlParent = '../';
             </div>
             <div class="dropdown py-2">
               <button class="btn btn-secondary dropdown-toggle w170" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                구분2
-              </button>
-              <ul class="dropdown-menu w170" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">전체</a></li>
-                <li><a class="dropdown-item" href="#">포니정해외 학술탐방단</a></li>
-                <li><a class="dropdown-item" href="#">포니정인문연구장학</a></li>
-                <li><a class="dropdown-item" href="#">기존장학</a></li>
-              </ul>
-            </div>
-            <div class="dropdown py-2">
-              <button class="btn btn-secondary dropdown-toggle w170" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 공고 상태
               </button>
               <ul class="dropdown-menu w170" aria-labelledby="dropdownMenuButton1">
