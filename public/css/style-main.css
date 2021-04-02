@@ -185,7 +185,11 @@ b.point {
 }
 
 .w170 {
-  width: 170px;
+  max-width: 170px;
+}
+
+.w320 {
+  max-width: 320px;
 }
 
 .filter_grp > div {
@@ -2721,11 +2725,6 @@ body.register_single .article_title .col:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-body.register_list .w320,
-body.register_single .w320 {
-  width: 320px;
 }
 
 body.register_list .excel,

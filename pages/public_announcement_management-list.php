@@ -16,7 +16,7 @@ $urlParent = '../';
     <div class="row">
       <div class="filter_wrap">
         <div class="row">
-          <div class="col col-lg-9 flex_row filter_grp justify-content-start">
+          <div class="col col-lg-9 flex_row filter_grp justify-content-start flex-wrap">
             <div class="dropdown py-2">
               <button class="btn btn-secondary dropdown-toggle w170" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 타입
@@ -27,6 +27,7 @@ $urlParent = '../';
                 <li><a class="dropdown-item" href="#">장학</a></li>
               </ul>
             </div>
+            <!-- 타입: 장학 -->
             <div class="dropdown py-2">
               <button class="btn btn-secondary dropdown-toggle w170" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 구분 1
@@ -40,7 +41,8 @@ $urlParent = '../';
                 <li><a class="dropdown-item" href="#">한국학 지원구분</a></li>
               </ul>
             </div>
-            <div class="dropdown py-2">
+            <!-- 타입: 학술지원  -->
+            <!-- <div class="dropdown py-2">
               <button class="btn btn-secondary dropdown-toggle w170" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 구분 2
               </button>
@@ -50,13 +52,13 @@ $urlParent = '../';
                 <li><a class="dropdown-item" href="#">포니정인문연구장학</a></li>
                 <li><a class="dropdown-item" href="#">기존장학</a></li>
               </ul>
-            </div>
-            <div class="search_box input-group py-2">
+            </div> -->
+            <div class="search_box input-group py-2 w320">
               <input type="text" class="form-control" placeholder="검색어를 입력해주세요" aria-label="검색어를 입력해주세요" aria-describedby="button-addon2">
               <button class="btn btn-outline-secondary" type="button" id="button-addon2">검색</button>
             </div>
           </div>
-          <div class="col col-lg-3 flex_row justify-content-end">
+          <div class="col flex_row justify-content-end">
             <div class="dropdown py-2">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 항목 갯수
@@ -89,7 +91,7 @@ $urlParent = '../';
               <td class="_classify">한국학 지원</td>
               <td class="_state">모집중</td>
               <td class="_title">
-                <a href="/pages/public_announcement_management-single.php">제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</a>
+                <a href="/pages/public_announcement_management-editor.php">제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</a>
               </td>
               <td class="_period">2021.02.28 - 2021.03.28</td>
             </tr>
@@ -99,7 +101,7 @@ $urlParent = '../';
               <td class="_classify">국내장학금 - 포니정해외학술탐방안</td>
               <td class="_state">완료</td>
               <td class="_title">
-                <a href="/pages/public_announcement_management-single.php">제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</a>
+                <a href="/pages/public_announcement_management-editor.php">제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</a>
               </td>
               <td class="_period">2021.02.28 - 2021.03.28</td>
             </tr>
@@ -109,7 +111,7 @@ $urlParent = '../';
               <td class="_classify">신진연구자 지원</td>
               <td class="_state">완료</td>
               <td class="_title">
-                <a href="/pages/public_announcement_management-single.php">2020 포니정재단 학술지원 연구과제 공모 (+FAQ) 안내</a>
+                <a href="/pages/public_announcement_management-editor.php">2020 포니정재단 학술지원 연구과제 공모 (+FAQ) 안내</a>
               </td>
               <td class="_period">2021.02.28 - 2021.03.28</td>
             </tr>

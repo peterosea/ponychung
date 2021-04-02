@@ -28,7 +28,7 @@ $urlParent = '../';
             <tr>
               <td class="_num">6</td>
               <td class="_title">
-                <a href="/pages/register-list.php"><span class="label _ing">모집중</span>제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</a>
+                <a href="#"><span class="label _ing">모집중</span>제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</a>
               </td>
               <td class="_classify">
                 <div>국내장학금 / 기존장학</div>
@@ -41,7 +41,7 @@ $urlParent = '../';
             <tr>
               <td class="_num">5</td>
               <td class="_title">
-                <a href="/pages/register-list.php"><span class="label _ing">모집중</span>제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</a>
+                <a href="#"><span class="label _ing">모집중</span>제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</a>
               </td>
               <td class="_classify">
                 <div>국내장학금 / 기존장학</div>
@@ -54,7 +54,7 @@ $urlParent = '../';
             <tr>
               <td class="_num">4</td>
               <td class="_title">
-                <a href="/pages/register-list.php"><span class="label _ing">모집중</span>2020 포니정재단 학술지원 연구과제 공모 (+FAQ) 안내</a>
+                <a href="#"><span class="label _ing">모집중</span>2020 포니정재단 학술지원 연구과제 공모 (+FAQ) 안내</a>
               </td>
               <td class="_classify">
                 <div>국내장학금 / 기존장학</div>
@@ -67,7 +67,7 @@ $urlParent = '../';
             <tr>
               <td class="_num">3</td>
               <td class="_title">
-                <a href="/pages/register-list.php"><span class="label _complete">완료</span>2020 포니정 인문연구장학 모집 공고</a>
+                <a href="#"><span class="label _complete">완료</span>2020 포니정 인문연구장학 모집 공고</a>
               </td>
               <td class="_classify">
                 <div>국내장학금 / 기존장학</div>
@@ -80,7 +80,7 @@ $urlParent = '../';
             <tr>
               <td class="_num">2</td>
               <td class="_title">
-                <a href="/pages/register-list.php"><span class="label _complete">완료</span>2020 포니정 인문연구장학 모집 공고</a>
+                <a href="#"><span class="label _complete">완료</span>2020 포니정 인문연구장학 모집 공고</a>
               </td>
               <td class="_classify">
                 <div>국내장학금 / 기존장학</div>
@@ -93,7 +93,7 @@ $urlParent = '../';
             <tr>
               <td class="_num">1</td>
               <td class="_title">
-                <a href="/pages/register-list.php"><span class="label _complete">완료</span>2020 포니정재단 학술지원 연구과제 공모 (+FAQ)
+                <a href="#"><span class="label _complete">완료</span>2020 포니정재단 학술지원 연구과제 공모 (+FAQ)
               </td>
               <td class="_classify">
                 <div>국내장학금 / 기존장학</div>

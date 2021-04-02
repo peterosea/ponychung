@@ -35,7 +35,7 @@ $urlParent = '../';
                 <th>구분</th>
                 <td>
                   <div class="innerWrap d-flex">
-                    <div class="dropdown py-2 w-100 me-3">
+                    <div class="dropdown py-2 w-100">
                       <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         구분 1
                       </button>
@@ -48,7 +48,8 @@ $urlParent = '../';
                         <li><a class="dropdown-item" href="#">한국학 지원구분</a></li>
                       </ul>
                     </div>
-                    <div class="dropdown py-2 w-100">
+                    <!-- 타입: 학술지원 -->
+                    <!-- <div class="dropdown py-2 w-100">
                       <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         구분 2
                       </button>
@@ -58,7 +59,7 @@ $urlParent = '../';
                         <li><a class="dropdown-item" href="#">포니정인문연구장학</a></li>
                         <li><a class="dropdown-item" href="#">기존장학</a></li>
                       </ul>
-                    </div>
+                    </div> -->
                   </div>
                 </td>
               </tr>

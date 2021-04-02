@@ -43,7 +43,7 @@ $urlParent = '../';
               <button class="btn btn-outline-secondary" type="button" id="button-addon2">검색</button>
             </div>
           </div>
-          <div class="col col-lg-3 flex_row justify-content-end">
+          <div class="col flex_row justify-content-end">
             <div class="dropdown py-2">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 항목 갯수
