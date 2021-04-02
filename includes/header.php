@@ -91,10 +91,10 @@
         <li class="item">
           <ul class="submenu">
             <li class="item">
-              <a href="#">지원 현황</a>
+              <a href="/pages/app_state-list.php">지원 현황</a>
             </li>
             <li class="item">
-              <a href="#">접수 현황</a>
+              <a href="/pages/register-list.php">접수 현황</a>
             </li>
             <li class="item">
               <a href="#">심사</a>
@@ -181,10 +181,10 @@
         </a>
         <ul class="submenu">
           <li class="item">
-            <a href="#">지원 현황</a>
+            <a href="/pages/app_state-list.php">지원 현황</a>
           </li>
           <li class="item">
-            <a href="#">접수 현황</a>
+            <a href="/pages/register-list.php">접수 현황</a>
           </li>
           <li class="item">
             <a href="#">심사</a>

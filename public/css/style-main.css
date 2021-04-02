@@ -2683,3 +2683,70 @@ body.app_management .checkboxWrap:not(:last-child) {
 body.app_management .checkboxWrap {
   display: inline-block;
 }
+
+body.register_list .article_title {
+  padding: 45px 40px;
+  border: solid 1px #222;
+  background-color: #ffffff;
+  margin-bottom: 50px;
+}
+
+body.register_list .article_title ._classify {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+body.register_list .article_title h2._title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+body.register_list .article_title ._period {
+  color: #666;
+}
+
+body.register_list .article_title .col:last-child {
+  font-size: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body.register_list .w320 {
+  width: 320px;
+}
+
+body.register_list .excel {
+  padding-left: 28px;
+  padding-right: 28px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  background-color: #999;
+  border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+body.register_list ._attachment a {
+  display: block;
+  margin: 0 auto;
+  width: 14px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16.323' height='14.833' viewBox='0 0 16.323 14.833'%3E%3Cpath fill='none' stroke='%23999' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2px' d='M578.708 785.19l-6.149 6.149c-1.125 1.125-2.192 1.194-2.956.431-.605-.6-1.071-1.728.219-3.017l7.836-7.837a3.317 3.317 0 0 1 4.691 0 3.317 3.317 0 0 1 0 4.691l-6.756 6.756' transform='translate(-568 -778.945)'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

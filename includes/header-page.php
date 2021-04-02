@@ -32,17 +32,25 @@ if (strpos($page_name, 'app_write') !== false) {
   $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
   $backgroundImg = 'headerbg-app_write.jpg';
 }
+if (strpos($page_name, 'app_management') !== false) {
+  $parentMenu = '지원서작성';
+  $currentCat = '지원서 관리';
+  $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
+  $backgroundImg = 'headerbg-app_write.jpg';
+}
+
+// 지원현황
 if (strpos($page_name, 'app_state') !== false) {
   $parentMenu = '지원현황';
   $currentCat = '지원현황';
   $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
   $backgroundImg = 'headerbg-app_state.jpg';
 }
-if (strpos($page_name, 'app_management') !== false) {
-  $parentMenu = '지원서작성';
-  $currentCat = '지원서 관리';
+if (strpos($page_name, 'register_list') !== false) {
+  $parentMenu = '지원현황';
+  $currentCat = '접수 현황';
   $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
-  $backgroundImg = 'headerbg-app_write.jpg';
+  $backgroundImg = 'headerbg-app_state.jpg';
 }
 
 // 회원관리
