@@ -1,0 +1,48 @@
+body.audit_list {
+  .article_title {
+    padding: 45px 40px;
+    border: solid 1px #222;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+    ._classify {
+      font-size: $size-p;
+      margin-bottom: 5px;
+    }
+    h2._title {
+      font-size: 24px;
+      font-weight: 400;
+    }
+    ._period {
+      color: $grey-six;
+    }
+    .col:last-child {
+      font-size: $size-p;
+      align-items: center;
+      justify-content: flex-end;
+      display: flex;
+    }
+  }
+  ._option {
+    margin-bottom: 20px;
+  }
+  .point {
+    color: #d4000f;
+  }
+  .content_wrap {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #222;
+    margin-bottom: 30px;
+  }
+  .tableRow {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .btnRow {
+    padding-top: 30px;
+    .btn_wrap {
+      text-align: center;
+    }
+  }
+}

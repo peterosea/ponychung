@@ -112,6 +112,48 @@
         color: $grey-nine;
       }
     }
+    &.theme_layout {
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #aaa;
+      div,
+      p,
+      a,
+      li,
+      th,
+      td {
+        font-size: 14px;
+      }
+      thead {
+        th {
+          border-bottom: 1px solid #222;
+          border-top: 1px solid #222;
+        }
+      }
+      .professorItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > span {
+          margin-right: 10px;
+        }
+      }
+      ._num {
+        color: #999;
+      }
+      ._first_audit,
+      ._second_audit {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        ul {
+          display: flex;
+          flex-direction: column;
+          li:not(:last-child) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
   }
 }
 // 페이지네이션

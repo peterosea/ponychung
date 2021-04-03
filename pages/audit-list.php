@@ -93,7 +93,7 @@ $urlParent = '../';
               </td>
               <td>한국학 지원</td>
               <td class="_title">
-                <a href="#">
+                <a href="/pages/audit-list-id.php">
                   2020 제5회 민연 젊은 한국학 아카데미 온라인 개최 안내
                 </a>
               </td>
