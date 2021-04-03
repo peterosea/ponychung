@@ -112,6 +112,17 @@
         color: $grey-nine;
       }
     }
+
+    ._attachment a {
+      display: block;
+      margin: 0 auto;
+      width: 14px;
+      height: 14px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16.323' height='14.833' viewBox='0 0 16.323 14.833'%3E%3Cpath fill='none' stroke='%23999' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2px' d='M578.708 785.19l-6.149 6.149c-1.125 1.125-2.192 1.194-2.956.431-.605-.6-1.071-1.728.219-3.017l7.836-7.837a3.317 3.317 0 0 1 4.691 0 3.317 3.317 0 0 1 0 4.691l-6.756 6.756' transform='translate(-568 -778.945)'/%3E%3C/svg%3E%0A");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
     &.theme_layout {
       border-left: 1px solid #ddd;
       border-right: 1px solid #ddd;

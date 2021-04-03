@@ -48,9 +48,7 @@ $urlParent = '../';
               <tbody>
                 <tr>
                   <td class="_num">1</td>
-                  <td class="_name">
-                    <a href="/pages/register-single.php">김지원 / 남</a>
-                  </td>
+                  <td class="_name">김지원 / 남</td>
                   <td class="_bachelor">카이스트</td>
                   <td class="_school _powdered_medicine">서울대 / 미학</td>
                   <td class="_first_audit">
@@ -76,9 +74,7 @@ $urlParent = '../';
                 </tr>
                 <tr>
                   <td class="_num">1</td>
-                  <td class="_name">
-                    <a href="/pages/register-single.php">김지원 / 남</a>
-                  </td>
+                  <td class="_name">김지원 / 남</td>
                   <td class="_bachelor">카이스트</td>
                   <td class="_school _powdered_medicine">서울대 / 미학</td>
                   <td class="_first_audit">
@@ -98,9 +94,7 @@ $urlParent = '../';
                 </tr>
                 <tr>
                   <td class="_num">2</td>
-                  <td class="_name">
-                    <a href="/pages/register-single.php">이지원 / 여</a>
-                  </td>
+                  <td class="_name">이지원 / 여</td>
                   <td class="_bachelor">연세대</td>
                   <td class="_school _powdered_medicine">이대 / 여성학</td>
                   <td class="_first_audit">
@@ -120,9 +114,7 @@ $urlParent = '../';
                 </tr>
                 <tr>
                   <td class="_num">3</td>
-                  <td class="_name">
-                    <a href="/pages/register-single.php">박지원 / 여</a>
-                  </td>
+                  <td class="_name">박지원 / 여</td>
                   <td class="_bachelor">서울대</td>
                   <td class="_school _powdered_medicine">연세대 / 문헌정보학</td>
                   <td class="_first_audit">
@@ -136,9 +128,7 @@ $urlParent = '../';
                 </tr>
                 <tr>
                   <td class="_num">4</td>
-                  <td class="_name">
-                    <a href="/pages/register-single.php">최지원 / 남</a>
-                  </td>
+                  <td class="_name">최지원 / 남</td>
                   <td class="_bachelor">한예종</td>
                   <td class="_school _powdered_medicine">경희대 / 독일근대사</td>
                   <td class="_first_audit">
@@ -154,9 +144,7 @@ $urlParent = '../';
                   echo <<<HTML
                 <tr>
                   <td class="_num"></td>
-                  <td class="_name">
-                    <a href="/pages/register-single.php"></a>
-                  </td>
+                  <td class="_name"></td>
                   <td class="_bachelor"></td>
                   <td class="_school _powdered_medicine"></td>
                   <td class="_first_audit">
@@ -219,9 +207,7 @@ HTML;
               <tbody>
                 <tr>
                   <td class="_num">4</td>
-                  <td class="_name">
-                    <a href="/pages/register-single.php">김지원 / 남</a>
-                  </td>
+                  <td class="_name">김지원 / 남</td>
                   <td class="_school _powdered_medicine">서울대 / 미학</td>
                   <td class="_first_audit">
                     <div class="btn btn_add">추가</div>
@@ -234,9 +220,7 @@ HTML;
                   echo <<<HTML
                 <tr>
                   <td class="_num"></td>
-                  <td class="_name">
-                    <a href="/pages/register-single.php"></a>
-                  </td>
+                  <td class="_name"></td>
                   <td class="_school _powdered_medicine"></td>
                   <td class="_first_audit">
                   </td>
