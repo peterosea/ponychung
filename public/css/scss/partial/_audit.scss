@@ -1,5 +1,6 @@
 body.audit_list,
-body.audit_final_list {
+body.audit_final_list,
+body.audit_final_single {
   .article_title {
     padding: 45px 40px;
     border: solid 1px #222;
@@ -45,5 +46,45 @@ body.audit_final_list {
     .btn_wrap {
       text-align: center;
     }
+  }
+  .article_divider .moreWrap {
+    margin-top: 33px;
+    margin-bottom: 49px;
+    padding-bottom: 61px;
+    border-bottom: 1px solid #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn {
+      align-items: center;
+    }
+  }
+  .inputWrap {
+    display: flex;
+    input:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+  ._attachment {
+    display: flex;
+    justify-content: space-between;
+    .innerWrap {
+      padding: 12px 0;
+    }
+  }
+  .article_audit {
+    margin-bottom: 61px;
+  }
+  .inputWrap {
+    display: flex;
+  }
+}
+
+.audit_final_single {
+  .article_btn_wrap {
+    margin-top: 0;
+  }
+  .article_btn_wrap .col:last-child {
+    justify-content: center;
   }
 }

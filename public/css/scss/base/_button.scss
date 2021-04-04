@@ -84,6 +84,21 @@
     align-items: center;
     margin-right: 10px;
   }
+  &.down {
+    background-image: url("#{$urlImg}/ic_page_down.svg");
+    text-indent: -999px;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px $grey-c;
+    border-radius: 100px;
+  }
 }
 .btn_burger {
   display: flex;
