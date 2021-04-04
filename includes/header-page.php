@@ -58,6 +58,12 @@ if (strpos($page_name, 'audit') !== false) {
   $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
   $backgroundImg = 'headerbg-app_state.jpg';
 }
+if (strpos($page_name, 'audit_result') !== false) {
+  $parentMenu = '지원현황';
+  $currentCat = '심사 결과';
+  $currentDesc = '혁신과 도전정신을 후원하며 미래를 만들어갑니다';
+  $backgroundImg = 'headerbg-app_state.jpg';
+}
 
 // 회원관리
 if (strpos($page_name, 'member') !== false) {

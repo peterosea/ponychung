@@ -1,6 +1,8 @@
 body.audit_list,
 body.audit_final_list,
-body.audit_final_single {
+body.audit_final_single,
+body.audit_result_list,
+body.audit_result_single {
   .article_title {
     padding: 45px 40px;
     border: solid 1px #222;
@@ -78,13 +80,39 @@ body.audit_final_single {
   .inputWrap {
     display: flex;
   }
+  .unit {
+    font-size: 0;
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background-color: #707070;
+    margin: 0 11px;
+  }
 }
 
-.audit_final_single {
+body.audit_final_single,
+body.audit_result_single {
   .article_btn_wrap {
     margin-top: 0;
   }
   .article_btn_wrap .col:last-child {
     justify-content: center;
+  }
+}
+body.audit_result_single {
+  .article_divider .moreWrap {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+  .resultTitle {
+    padding: 15px 0;
+    text-align: center;
+    display: block;
+    margin-bottom: 40px;
+    background-color: #d4000f;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px;
   }
 }
