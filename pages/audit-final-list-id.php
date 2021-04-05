@@ -1,5 +1,5 @@
 <?php
-$page_name = 'register_list subpage';
+$page_name = 'audit_final_list subpage';
 $urlParent = '../';
 ?>
 
@@ -69,7 +69,7 @@ $urlParent = '../';
             <tr>
               <td class="_num">4</td>
               <td class="_name">
-                <a href="/pages/register-list-id-single-id.php">김지원</a>
+                <a href="#">김지원</a>
               </td>
               <td class="_gender">남</td>
               <td class="_bachelor">카이스트</td>
@@ -85,7 +85,7 @@ $urlParent = '../';
             <tr>
               <td class="_num">3</td>
               <td class="_name">
-                <a href="/pages/register-list-id-single-id.php">이지원</a>
+                <a href="#">이지원</a>
               </td>
               <td class="_gender">남</td>
               <td class="_bachelor">연세대</td>
@@ -101,7 +101,7 @@ $urlParent = '../';
             <tr>
               <td class="_num">2</td>
               <td class="_name">
-                <a href="/pages/register-list-id-single-id.php">박지원</a>
+                <a href="#">박지원</a>
               </td>
               <td class="_gender">남</td>
               <td class="_bachelor">서울대</td>
@@ -117,7 +117,7 @@ $urlParent = '../';
             <tr>
               <td class="_num">1</td>
               <td class="_name">
-                <a href="/pages/register-list-id-single-id.php">최지원</a>
+                <a href="#">최지원</a>
               </td>
               <td class="_gender">남</td>
               <td class="_bachelor">한예종</td>

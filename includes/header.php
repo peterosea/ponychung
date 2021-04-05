@@ -41,7 +41,8 @@
         <li class="item <?php if (
                           strpos($page_name, 'app_state') !== false ||
                           strpos($page_name, 'register_list') !== false ||
-                          strpos($page_name, 'register_single') !== false
+                          strpos($page_name, 'register_single') !== false ||
+                          strpos($page_name, 'audit') !== false
                         ) {
                           echo 'current';
                         } ?>">
@@ -101,7 +102,7 @@
               <a href="/pages/register-list.php">접수 현황</a>
             </li>
             <li class="item">
-              <a href="#">심사</a>
+              <a href="/pages/audit-list.php">심사</a>
             </li>
           </ul>
         </li>
@@ -191,7 +192,7 @@
             <a href="/pages/register-list.php">접수 현황</a>
           </li>
           <li class="item">
-            <a href="#">심사</a>
+            <a href="/pages/audit-list.php">심사</a>
           </li>
         </ul>
       </li>
