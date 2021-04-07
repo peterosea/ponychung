@@ -26,6 +26,9 @@ td {
   font-weight: 400;
   line-height: 1.4em;
   font-size: 16px;
+  @include respondTo("md") {
+    font-size: 14px;
+  }
 }
 h1,
 h2,

@@ -91,6 +91,9 @@
         line-height: 1.4em;
         padding: 20px 10px;
         text-align: center;
+        @include respondTo("md") {
+          font-size: 14px;
+        }
       }
     }
     tbody {
@@ -319,6 +322,9 @@
     td {
       font-size: $size-p;
       border-bottom: 1px solid $grey-c;
+      @include respondTo("md") {
+        font-size: 14px;
+      }
       &.align_center {
         text-align: center;
       }
@@ -336,17 +342,63 @@
       padding: 30px;
       text-align: left;
     }
+    @include respondTo("md") {
+      tr {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      th {
+        font-weight: bold;
+        width: 26%;
+        min-width: 80px;
+        text-align: left;
+        word-break: keep-all;
+      }
+      td {
+        width: calc(100% - 26%);
+      }
+      th,
+      td {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        border: none;
+        margin: -0.5px 0;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 17px 19px;
+      }
+    }
   }
   .article_head {
     .article_table {
-      td:last-child {
-        width: 300px;
+      @include respondTo("nmd") {
+        td:last-child {
+          width: 300px;
+        }
+      }
+    }
+    &.article_title {
+      @include respondTo("md") {
+        padding: 40px 28px;
+        .row > div:first-child {
+          flex-wrap: wrap;
+        }
+        .labelWrap {
+          width: 100%;
+        }
+        ._title {
+          margin-bottom: 12px;
+        }
       }
     }
   }
   .article_body {
     &._content {
       padding: 70px 40px;
+      @include respondTo("md") {
+        padding: 40px 28px;
+      }
     }
     .content_inner {
       text-align: center;

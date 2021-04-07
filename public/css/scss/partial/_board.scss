@@ -1,19 +1,21 @@
 body.board.subpage {
   .article_head {
     .article_table {
-      th,
-      td {
-        &:first-child {
-          width: 12%;
-        }
-        &:nth-child(2) {
-          width: auto;
-        }
-        &:nth-child(3) {
-          width: 15%;
-        }
-        &:nth-child(4) {
-          width: 20%;
+      @include respondTo("nmd") {
+        th,
+        td {
+          &:first-child {
+            width: 12%;
+          }
+          &:nth-child(2) {
+            width: auto;
+          }
+          &:nth-child(3) {
+            width: 15%;
+          }
+          &:nth-child(4) {
+            width: 20%;
+          }
         }
       }
     }
@@ -23,16 +25,25 @@ body.board.subpage {
     background-color: #f8f8f8;
     padding: 70px;
     margin-top: 40px;
+    @include respondTo("md") {
+      padding: 40px 28px;
+    }
     .comment_write {
       display: flex;
       textarea {
         width: calc(100% - 165px);
+        @include respondTo("md") {
+          width: calc(100% - 85px);
+        }
       }
       .btn {
         width: 160px;
         margin-left: 5px;
         align-items: center;
         font-size: 14px;
+        @include respondTo("md") {
+          width: 80px;
+        }
       }
     }
     .comment_list {
@@ -41,6 +52,9 @@ body.board.subpage {
         padding: 22px 0;
         border-bottom: 1px solid $grey-c;
         display: flex;
+        @include respondTo("md") {
+          flex-wrap: wrap;
+        }
         &:first-child {
           padding-top: 0;
           border-top: none;
@@ -53,6 +67,9 @@ body.board.subpage {
       }
       ._text {
         padding-right: 15px;
+        @include respondTo("md") {
+          margin-top: 12px;
+        }
       }
       .ic_button {
         color: $grey-nine;
@@ -60,6 +77,9 @@ body.board.subpage {
         display: inline-flex;
         align-items: center;
         margin-right: 20px;
+        @include respondTo("md") {
+          margin-top: 12px;
+        }
         &:last-child {
           margin-right: 0px;
         }
@@ -97,19 +117,31 @@ body.board.subpage {
           border-left: 1px solid #707070;
           border-bottom: 1px solid #707070;
           margin: 0 30px;
+          @include respondTo("md") {
+            margin: 0 12px;
+          }
         }
         ._text_edit {
           padding-right: 0;
           width: 100%;
           display: flex;
+          @include respondTo("md") {
+            margin-top: 12px;
+          }
           textarea {
             width: calc(100% - 165px);
+            @include respondTo("md") {
+              width: calc(100% - 85px);
+            }
           }
           .btn.btn_light {
             width: 160px;
             align-items: center;
             margin-left: 5px;
             font-size: 14px;
+            @include respondTo("md") {
+              width: 80px;
+            }
           }
         }
       }

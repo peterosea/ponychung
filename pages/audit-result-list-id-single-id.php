@@ -15,18 +15,7 @@ $urlParent = '../';
   <div class="container con_width flex_col">
     <div class="row article_wrap">
       <article>
-        <div class="article_head article_title">
-          <div class="row inner">
-            <div class="col col-lg-8 d-flex align-items-center">
-              <span class="label _complete">완료</span>
-              <h2 class="_title">2020 제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</h2>
-            </div>
-            <div class="col col-lg-4 flex-wrap">
-              <div class="_classify mb-2">국내장학금 / 포니정해외학술탐방단</div>
-              <div class="_period">2021.02.28 - 2021.03.28</div>
-            </div>
-          </div>
-        </div>
+        <?php include $urlParent . 'includes/article_head.php' ?>
         <div class="row article_head article_tableWrap">
           <div class="inner">
             <div class="_option">필수사항</div>
