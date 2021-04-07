@@ -18,12 +18,49 @@ $breakpoints: (
   "xxl": (
     max-width: 1880px,
   ),
+  "nsm": (
+    min-width: 375px,
+  ),
+  "nmd": (
+    min-width: 768px,
+  ),
+  "nlg": (
+    min-width: 992px,
+  ),
+  "nwide": (
+    min-width: 1280px,
+  ),
+  "nxl": (
+    min-width: 1760px,
+  ),
+  "nxxl": (
+    min-width: 1880px,
+  ),
 );
 /// Responsive breakpoint manager
 /// @access public
 /// @param {String} $breakpoint - Breakpoint
 /// @requires $breakpoints
 @mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == "string",
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+			+ 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+@mixin respondTo($breakpoint) {
   $raw-query: map-get($breakpoints, $breakpoint);
 
   @if $raw-query {

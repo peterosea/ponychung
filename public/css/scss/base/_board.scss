@@ -1,12 +1,36 @@
+.view_count {
+  justify-content: flex-end;
+  @include respondTo("md") {
+    display: none;
+  }
+}
 // 게시판 필터 영역
 .filter_grp {
+  flex-wrap: wrap;
   > div {
     margin-right: 10px;
+    @include respondTo("md") {
+      &:not(:last-child) {
+        width: calc(50% - 5px);
+        margin-right: 0;
+        > button {
+          width: 100%;
+          max-width: none;
+        }
+      }
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
     &:last-child {
       margin-right: 0;
     }
   }
   .search_box {
+    @include respondTo("md") {
+      width: 100%;
+      max-width: none;
+    }
     .form-control {
       width: 276px;
       height: 46px;
@@ -27,6 +51,9 @@
 }
 .filter_wrap {
   margin-bottom: calc(32px - 0.5rem);
+  > div {
+    margin: 0;
+  }
 }
 .require {
   &:after {
@@ -77,6 +104,54 @@
     .tr_notice {
       background-color: #f9f9f9;
     }
+
+    @include respondTo("md") {
+      thead,
+      ._num {
+        display: none;
+      }
+      tbody tr {
+        display: flex;
+        flex-direction: column;
+      }
+      tbody {
+        td,
+        th {
+          display: block;
+          padding: 0;
+          border: none;
+          text-align: left;
+          word-break: keep-all;
+        }
+        td {
+          padding-bottom: 7px;
+        }
+        tr {
+          padding: 31px 28px;
+        }
+      }
+      ._title {
+        a {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      ._classify {
+        color: #999;
+        margin-bottom: 17px;
+        order: 1;
+      }
+      ._title {
+        order: 0;
+      }
+      ._state {
+        order: -1;
+      }
+      ._period {
+        order: 10;
+      }
+    }
+
     &.theme_red {
       thead {
         background-color: $red;
@@ -87,8 +162,10 @@
       }
       tbody tr:hover {
         background-color: rgba(249, 245, 245, 0.5);
-        ._title a {
-          color: $red;
+        @include respondTo("nmd") {
+          ._title a {
+            color: $red;
+          }
         }
       }
       ._cat {
@@ -99,6 +176,9 @@
       }
       ._title {
         text-align: left;
+        a:hover {
+          color: $red;
+        }
       }
       ._classify {
         > * {

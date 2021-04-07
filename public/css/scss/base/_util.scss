@@ -52,6 +52,7 @@ ul.dropdown-menu {
   color: $grey-a !important;
 }
 .search_box {
+  width: auto;
   button.btn {
     border-radius: 0;
     text-indent: -999px;
@@ -80,6 +81,9 @@ ul.dropdown-menu {
   margin-right: 20px;
   text-align: center;
   width: 56px;
+  @include respondTo("md") {
+    margin-bottom: 10px;
+  }
   &._notice {
     background-color: $grey-nine;
     color: $white;

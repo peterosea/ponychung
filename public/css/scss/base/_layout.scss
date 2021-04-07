@@ -6,6 +6,11 @@
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #fff;
+  overflow-x: hidden;
+  @include respondTo("md") {
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
 }
 .container {
   display: flex;

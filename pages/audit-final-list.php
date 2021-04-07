@@ -58,7 +58,7 @@ $urlParent = '../';
               <button class="btn btn-outline-secondary" type="button" id="button-addon2">검색</button>
             </div>
           </div>
-          <div class="col col-lg-4 flex_row justify-content-end">
+          <div class="col col-lg-4 flex_row view_count">
             <div class="btn excel my-2">엑셀다운로드</div>
             <div class="dropdown py-2">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">

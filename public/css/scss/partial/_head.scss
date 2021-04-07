@@ -204,6 +204,11 @@ header.main_header {
     height: 100%;
     overflow: auto;
     align-items: flex-start;
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      width: 0;
+      height: 0;
+    }
     @include respond-to("md") {
       display: flex;
       &._active {
