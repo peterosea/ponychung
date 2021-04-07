@@ -213,3 +213,17 @@
   </nav>
   <!-- /.모바일 메뉴 --->
 </header>
+
+<!-- 모바일 메뉴 토글 예시 스크립트 -->
+<script>
+  const menuBtn = document.querySelector('.mobile_menu.btn.btn_burger');
+  const menuTarget = document.querySelector('.mobile_nav');
+
+  menuBtn.addEventListener('click', () => {
+    if (menuTarget.classList.contains('_active')) {
+      menuTarget.classList.remove('_active');
+    } else {
+      menuTarget.classList.add('_active');
+    }
+  })
+</script>
