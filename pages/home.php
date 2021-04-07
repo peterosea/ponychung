@@ -157,8 +157,8 @@
 <!-- /.Content Container -->
 
 <!-- Footer Load -->
-<?php include '../includes/footer.php' ?>
+<?php include 'includes/footer.php' ?>
 <!-- /.Footer Load -->
 
 <!-- Foot Load -->
-<?php include '../includes/foot.php' ?>
+<?php include 'includes/foot.php' ?>
