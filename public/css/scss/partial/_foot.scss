@@ -8,6 +8,11 @@ footer.main_footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    word-break: keep-all;
+    @include respondTo("md") {
+      padding: 23px 30px 10px;
+      max-width: 100%;
+    }
     > div {
       margin: 10px 0 23px;
     }
@@ -17,6 +22,9 @@ footer.main_footer {
   }
   .foot_menu {
     flex-wrap: wrap;
+    @include respondTo("md") {
+      margin-bottom: 10px;
+    }
     li.item {
       margin-right: 20px;
       margin-bottom: 10px;
