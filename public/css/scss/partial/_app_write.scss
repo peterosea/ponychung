@@ -1,23 +1,35 @@
 body.app_write.subpage {
   .table_list {
-    td {
-      &:first-child {
-        width: 8%;
+    @include respondTo("nmd") {
+      td {
+        &:first-child {
+          width: 8%;
+        }
+        &:nth-child(2) {
+          width: 47%;
+        }
+        &:nth-child(3) {
+          width: 25%;
+        }
+        &:nth-child(4) {
+          width: 20%;
+        }
       }
-      &:nth-child(2) {
-        width: 47%;
-      }
-      &:nth-child(3) {
-        width: 25%;
-      }
-      &:nth-child(4) {
-        width: 20%;
+      ._period .btn {
+        font-size: 14px;
+        width: 100%;
+        max-width: 135px;
       }
     }
-    ._period .btn {
-      font-size: 14px;
-      width: 100%;
-      max-width: 135px;
+
+    ._classify {
+      @include respondTo("md") {
+        date {
+          margin-top: 5px;
+          display: block;
+          color: #222;
+        }
+      }
     }
   }
   .article_title {
@@ -49,6 +61,7 @@ body.app_write.subpage {
     .btn.btn_box {
       margin-left: 5px;
       padding: 10px 35px;
+      white-space: nowrap;
     }
   }
   .article_table {
@@ -58,47 +71,84 @@ body.app_write.subpage {
     th,
     td {
       padding: 12px 30px;
-      height: 76px;
-      &:first-child {
-        width: 15%;
-      }
-      &:nth-child(2) {
-        width: 35%;
-      }
-      &:nth-child(3) {
-        width: 15%;
-      }
-      &:nth-child(4) {
-        width: 35%;
+      @include respondTo("nmd") {
+        height: 76px;
+        &:first-child {
+          width: 15%;
+          min-width: 150px;
+        }
+        &:nth-child(2) {
+          width: 35%;
+        }
+        &:nth-child(3) {
+          width: 15%;
+          min-width: 150px;
+        }
+        &:nth-child(4) {
+          width: 35%;
+        }
       }
     }
     &.column_two {
-      th,
-      td {
-        &:first-child {
-          width: 15%;
-        }
-        &:nth-child(2) {
-          width: 85%;
+      @include respondTo("nmd") {
+        th,
+        td {
+          &:first-child {
+            width: 15%;
+            min-width: 150px;
+          }
+          &:nth-child(2) {
+            width: 85%;
+          }
         }
       }
     }
     &.column_three {
-      th,
-      td {
-        &:first-child {
-          width: 15%;
+      @include respondTo("md") {
+        tr {
+          flex-wrap: wrap;
         }
-        &:nth-child(2) {
-          width: 65%;
+        th {
+          width: 100%;
         }
-        &:nth-child(3) {
-          width: 20%;
+        td:last-child {
+          justify-content: flex-end;
+        }
+      }
+      @include respondTo("nmd") {
+        th,
+        td {
+          &:first-child {
+            width: 15%;
+            min-width: 150px;
+          }
+          &:nth-child(2) {
+            width: 65%;
+          }
+          &:nth-child(3) {
+            width: 20%;
+          }
         }
       }
     }
     .flex_row {
       align-items: center;
+    }
+    @include respondTo("md") {
+      tr {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      td {
+        flex-grow: 5;
+        display: flex;
+        align-items: center;
+      }
+      th {
+        display: flex;
+        flex-grow: 1;
+        width: 26%;
+      }
     }
   }
   .article_body {
@@ -123,9 +173,11 @@ body.app_write.subpage {
   .article_btn_wrap {
     .col {
       justify-content: center;
+      flex-wrap: wrap;
     }
     .btn {
       min-width: 140px;
+      margin-bottom: 12px;
     }
   }
 }

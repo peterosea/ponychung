@@ -9,6 +9,12 @@ header.main_header {
   justify-content: center;
   position: absolute;
   z-index: 9;
+  @include respond-to("md") {
+    background-color: rgba(#999, 0.8);
+    &:before {
+      content: none;
+    }
+  }
   &:before {
     content: "";
     width: 100%;
@@ -24,6 +30,12 @@ header.main_header {
     height: $menuHeight;
     align-items: center;
     position: relative;
+    z-index: 999;
+  }
+  @include respond-to("md") {
+    .logo_container {
+      margin: 0 auto;
+    }
   }
   .logo_svg {
     width: 181px;
@@ -149,8 +161,10 @@ header.main_header {
       width: 24px;
       position: absolute;
       right: 0;
+      padding: 0;
       span {
         margin: 0 0 6px 0;
+        background-color: #fff;
       }
     }
     @include respond-to("md") {
@@ -190,6 +204,11 @@ header.main_header {
     height: 100%;
     overflow: auto;
     align-items: flex-start;
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      width: 0;
+      height: 0;
+    }
     @include respond-to("md") {
       display: flex;
       &._active {
@@ -197,6 +216,7 @@ header.main_header {
         visibility: visible;
         opacity: 1;
         z-index: 8;
+        padding-top: calc(20px + #{$menuHeight});
       }
     }
     .menu {

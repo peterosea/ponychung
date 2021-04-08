@@ -202,10 +202,23 @@
         </a>
         <ul class="submenu">
           <li class="item">
-            <a href="#">공지사항</a>
+            <a href="/pages/community-list.php">공지사항</a>
           </li>
           <li class="item">
-            <a href="#">게시판</a>
+            <a href="/pages/board-list.php">게시판</a>
+          </li>
+        </ul>
+      </li>
+      <li class="item has_submenu">
+        <a href="#">
+          <span>회원관리</span>
+        </a>
+        <ul class="submenu">
+          <li class="item">
+            <a href="/pages/member-list.php">회원리스트</a>
+          </li>
+          <li class="item">
+            <a href="/pages/board-list.php">게시판</a>
           </li>
         </ul>
       </li>

@@ -16,7 +16,7 @@ $urlParent = '../';
     <div class="row">
       <div class="filter_wrap">
         <div class="row align-items-center">
-          <div class="col col-lg-9 flex_row filter_grp justify-content-start">
+          <div class="col col-lg-9 flex_row filter_grp">
             <div class="dropdown py-2">
               <button class="btn btn-secondary dropdown-toggle w170" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 구분1
@@ -43,7 +43,7 @@ $urlParent = '../';
               <button class="btn btn-outline-secondary" type="button" id="button-addon2">검색</button>
             </div>
           </div>
-          <div class="col flex_row justify-content-end">
+          <div class="col flex_row view_count">
             <div class="dropdown py-2">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 항목 갯수
@@ -151,6 +151,7 @@ $urlParent = '../';
           </tbody>
         </table>
       </div>
+      <!-- 모바일에서 페이지네이션 최대는 5로 설정 -->
       <div class="pagination">
         <a href="#" class="page_link go_end">맨끝으로</a>
         <a href="#" class="page_link go_next">다음</a>

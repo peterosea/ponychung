@@ -4,6 +4,7 @@
   border-radius: 100px;
   text-align: center;
   justify-content: center;
+  white-space: nowrap;
   &:focus {
     box-shadow: none !important;
   }
@@ -12,6 +13,9 @@
     font-size: $size-p;
     border-radius: 0;
     text-align: center;
+    @include respondTo("md") {
+      padding: 12px 25px;
+    }
   }
   &.btn_light {
     color: $white;

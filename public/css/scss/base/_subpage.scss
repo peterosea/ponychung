@@ -1,6 +1,9 @@
 body.subpage {
   .pagination.with_button {
     position: relative;
+    @include respondTo("lg") {
+      flex-direction: column;
+    }
     .inner {
       width: 100%;
       justify-content: center;
@@ -9,6 +12,13 @@ body.subpage {
       position: absolute;
       top: -9px;
       right: 12px;
+      @include respondTo("lg") {
+        position: relative;
+        top: auto;
+        right: auto;
+        text-align: center;
+        margin-top: 40px;
+      }
     }
   }
 }

@@ -16,7 +16,7 @@ $urlParent = '../';
     <div class="row">
       <div class="filter_wrap">
         <div class="row">
-          <div class="col col-lg-9 flex_row filter_grp justify-content-start">
+          <div class="col col-lg-9 flex_row filter_grp">
             <div class="dropdown py-2">
               <button class="btn btn-secondary dropdown-toggle w170" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 타입
@@ -58,7 +58,7 @@ $urlParent = '../';
               <button class="btn btn-outline-secondary" type="button" id="button-addon2">검색</button>
             </div>
           </div>
-          <div class="col flex_row justify-content-end">
+          <div class="col flex_row view_count">
             <div class="dropdown py-2">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 항목 갯수

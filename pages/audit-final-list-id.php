@@ -15,18 +15,7 @@ $urlParent = '../';
   <div class="container con_width flex_col">
     <div class="row">
       <div class="filter_wrap">
-        <div class="article_head article_title">
-          <div class="row inner">
-            <div class="col col-lg-8 d-flex align-items-center">
-              <span class="label _ing">모집중</span>
-              <h2 class="_title">2020 제5회 민연 젊은 한국학 아카데미 온라인 개최 안내</h2>
-            </div>
-            <div class="col col-lg-4 flex-wrap">
-              <div class="_classify mb-2">국내장학금 / 포니정해외학술탐방단</div>
-              <div class="_period">2021.02.28 - 2021.03.28</div>
-            </div>
-          </div>
-        </div>
+        <?php include $urlParent . 'includes/article_head.php' ?>
         <div class="row align-items-center">
           <div class="col col-lg-7 flex_row filter_grp">
             <div class="search_box input-group py-2 w320">
@@ -34,7 +23,7 @@ $urlParent = '../';
               <button class="btn btn-outline-secondary" type="button" id="button-addon2">검색</button>
             </div>
           </div>
-          <div class="col col-lg-5 flex_row justify-content-end">
+          <div class="col col-lg-5 flex_row view_count">
             <div class="btn excel my-2">엑셀다운로드</div>
             <div class="dropdown py-2">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">

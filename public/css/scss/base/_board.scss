@@ -1,12 +1,36 @@
+.view_count {
+  justify-content: flex-end;
+  @include respondTo("md") {
+    display: none;
+  }
+}
 // 게시판 필터 영역
 .filter_grp {
+  flex-wrap: wrap;
   > div {
     margin-right: 10px;
+    @include respondTo("md") {
+      &:not(:last-child) {
+        width: calc(50% - 5px);
+        margin-right: 0;
+        > button {
+          width: 100%;
+          max-width: none;
+        }
+      }
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
     &:last-child {
       margin-right: 0;
     }
   }
   .search_box {
+    @include respondTo("md") {
+      width: 100%;
+      max-width: none;
+    }
     .form-control {
       width: 276px;
       height: 46px;
@@ -27,6 +51,9 @@
 }
 .filter_wrap {
   margin-bottom: calc(32px - 0.5rem);
+  > div {
+    margin: 0;
+  }
 }
 .require {
   &:after {
@@ -64,6 +91,9 @@
         line-height: 1.4em;
         padding: 20px 10px;
         text-align: center;
+        @include respondTo("md") {
+          font-size: 14px;
+        }
       }
     }
     tbody {
@@ -77,6 +107,54 @@
     .tr_notice {
       background-color: #f9f9f9;
     }
+
+    @include respondTo("md") {
+      thead,
+      ._num {
+        display: none;
+      }
+      tbody tr {
+        display: flex;
+        flex-direction: column;
+      }
+      tbody {
+        td,
+        th {
+          display: block;
+          padding: 0;
+          border: none;
+          text-align: left;
+          word-break: keep-all;
+        }
+        td {
+          padding-bottom: 7px;
+        }
+        tr {
+          padding: 31px 28px;
+        }
+      }
+      ._title {
+        a {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      ._classify {
+        color: #999;
+        margin-bottom: 17px;
+        order: 1;
+      }
+      ._title {
+        order: 0;
+      }
+      ._state {
+        order: -1;
+      }
+      ._period {
+        order: 10;
+      }
+    }
+
     &.theme_red {
       thead {
         background-color: $red;
@@ -87,8 +165,10 @@
       }
       tbody tr:hover {
         background-color: rgba(249, 245, 245, 0.5);
-        ._title a {
-          color: $red;
+        @include respondTo("nmd") {
+          ._title a {
+            color: $red;
+          }
         }
       }
       ._cat {
@@ -99,6 +179,9 @@
       }
       ._title {
         text-align: left;
+        a:hover {
+          color: $red;
+        }
       }
       ._classify {
         > * {
@@ -239,6 +322,9 @@
     td {
       font-size: $size-p;
       border-bottom: 1px solid $grey-c;
+      @include respondTo("md") {
+        font-size: 14px;
+      }
       &.align_center {
         text-align: center;
       }
@@ -256,17 +342,63 @@
       padding: 30px;
       text-align: left;
     }
+    @include respondTo("md") {
+      tr {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      th {
+        font-weight: bold;
+        width: 26%;
+        min-width: 80px;
+        text-align: left;
+        word-break: keep-all;
+      }
+      td {
+        width: calc(100% - 26%);
+      }
+      th,
+      td {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        border: none;
+        margin: -0.5px 0;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 17px 19px;
+      }
+    }
   }
   .article_head {
     .article_table {
-      td:last-child {
-        width: 300px;
+      @include respondTo("nmd") {
+        td:last-child {
+          width: 300px;
+        }
+      }
+    }
+    &.article_title {
+      @include respondTo("md") {
+        padding: 40px 28px;
+        .row > div:first-child {
+          flex-wrap: wrap;
+        }
+        .labelWrap {
+          width: 100%;
+        }
+        ._title {
+          margin-bottom: 12px;
+        }
       }
     }
   }
   .article_body {
     &._content {
       padding: 70px 40px;
+      @include respondTo("md") {
+        padding: 40px 28px;
+      }
     }
     .content_inner {
       text-align: center;

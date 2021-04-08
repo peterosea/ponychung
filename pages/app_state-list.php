@@ -106,6 +106,7 @@ $urlParent = '../';
           </tbody>
         </table>
       </div>
+      <!-- 모바일에서 페이지네이션 최대는 5로 설정 -->
       <div class="pagination">
         <a href="#" class="page_link go_end">맨끝으로</a>
         <a href="#" class="page_link go_next">다음</a>
