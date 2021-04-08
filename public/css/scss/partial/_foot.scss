@@ -34,6 +34,7 @@ footer.main_footer {
     }
   }
   .foot_side_menu {
+    flex-wrap: wrap;
     ._text {
       display: none;
     }
@@ -42,6 +43,7 @@ footer.main_footer {
     }
     .item {
       margin-right: 10px;
+      margin-bottom: 10px;
       &:last-child {
         margin-right: 0;
       }
@@ -76,8 +78,10 @@ footer.main_footer {
       height: 18px;
     }
   }
+  .item._insta {
+    margin-right: 20px;
+  }
   .shortcut {
-    margin-left: 10px;
     a {
       font-size: 14px;
       font-weight: 500;
