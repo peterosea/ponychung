@@ -222,6 +222,16 @@
           </li>
         </ul>
       </li>
+      <li class="item has_submenu loginMenu">
+        <ul class="submenu">
+          <li class="item">
+            <a href="/pages/login.php">로그인</a>
+          </li>
+          <li class="item">
+            <a href="/pages/register-term.php">회원가입</a>
+          </li>
+        </ul>
+      </li>
     </ul>
   </nav>
   <!-- /.모바일 메뉴 --->
