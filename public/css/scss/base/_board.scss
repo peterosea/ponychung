@@ -30,12 +30,14 @@
     @include respondTo("md") {
       width: 100%;
       max-width: none;
+      flex-wrap: nowrap;
     }
     .form-control {
-      width: 276px;
       height: 46px;
       border-radius: 0;
       border-right: 0;
+      width: 100%;
+      max-width: 276px;
     }
     button.btn {
       border: none;

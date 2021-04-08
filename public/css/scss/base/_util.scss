@@ -22,9 +22,11 @@ input.form-control {
   border-radius: 0;
   color: $grey-six;
   padding: 0 0 0 14px;
-  min-width: 160px;
   align-items: center;
   justify-content: space-between;
+  @include respondTo("nsm") {
+    min-width: 160px;
+  }
   &:after {
     border: 0;
     background-color: $bg-light;

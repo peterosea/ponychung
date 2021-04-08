@@ -19,12 +19,14 @@ $urlParent = '../';
           <h1>로그인</h1>
         </div>
         <form class="login-form">
-          <div class="col col-sm-8">
-            <input type="text" id="loginID" class="form-control" placeholder="아이디">
-            <input type="password" id="loginPW" class="form-control" placeholder="비밀번호">
-          </div>
-          <div class="col col-sm-4">
-            <button class="btn btn_border_box" type="button">로그인</button>
+          <div class="row">
+            <div class="col-12 col-sm-8 mb-4 mb-sm-0">
+              <input type="text" id="loginID" class="form-control" placeholder="아이디">
+              <input type="password" id="loginPW" class="form-control" placeholder="비밀번호">
+            </div>
+            <div class="col-12 col-sm-4">
+              <button class="btn btn_border_box" type="button">로그인</button>
+            </div>
           </div>
         </form>
         <div class="link_grp">

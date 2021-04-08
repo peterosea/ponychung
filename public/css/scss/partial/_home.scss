@@ -72,6 +72,12 @@ body.home {
     }
     .col_3 .inner_col {
       padding: 70px;
+      @include respondTo("md") {
+        padding: 40px;
+      }
+      @include respondTo("sm") {
+        padding: 40px 24px;
+      }
     }
     .title_wrap {
       margin-bottom: 60px;
@@ -145,6 +151,9 @@ body.home {
         font-size: 40px;
         font-weight: bold;
         transition: all 0.3s;
+        @include respondTo("md") {
+          font-size: 32px;
+        }
       }
       &:hover h1 {
         color: $red;

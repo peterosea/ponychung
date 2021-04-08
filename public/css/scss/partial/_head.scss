@@ -243,6 +243,22 @@ header.main_header {
     li.has_submenu {
       @extend .flex_col;
     }
+    li.loginMenu {
+      margin-top: 30px;
+      .submenu {
+        display: flex;
+        flex-direction: row;
+        .item {
+          width: 100%;
+          a {
+            border-bottom: 0;
+          }
+        }
+        .item:not(:last-child) {
+          border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
     ul.submenu {
       @extend .flex_col;
       a {

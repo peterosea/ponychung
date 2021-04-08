@@ -55,13 +55,24 @@ body.app_write.subpage {
     }
   }
   ._address {
+    @include respondTo("sm") {
+      flex-direction: column;
+    }
     .form-control {
       max-width: 530px;
+      @include respondTo("sm") {
+        margin-bottom: 12px;
+      }
     }
     .btn.btn_box {
       margin-left: 5px;
       padding: 10px 35px;
       white-space: nowrap;
+      @include respondTo("sm") {
+        margin-left: 0;
+        max-width: none;
+        width: 100%;
+      }
     }
   }
   .article_table {
@@ -90,6 +101,19 @@ body.app_write.subpage {
       }
     }
     &.column_two {
+      @include respondTo("sm") {
+        td,
+        th {
+          width: 100%;
+        }
+        th {
+          border-bottom: 0;
+        }
+        td {
+          border-top: 0;
+          padding-top: 0;
+        }
+      }
       @include respondTo("nmd") {
         th,
         td {
@@ -104,6 +128,11 @@ body.app_write.subpage {
       }
     }
     &.column_three {
+      @include respondTo("sm") {
+        td {
+          width: 100%;
+        }
+      }
       @include respondTo("md") {
         tr {
           flex-wrap: wrap;
@@ -139,15 +168,19 @@ body.app_write.subpage {
         display: flex;
         flex-wrap: wrap;
       }
+      td,
+      th {
+        padding: 12px;
+        box-sizing: border-box;
+      }
       td {
-        flex-grow: 5;
         display: flex;
         align-items: center;
+        width: calc(100% - 100px);
       }
       th {
         display: flex;
-        flex-grow: 1;
-        width: 26%;
+        width: 100px;
       }
     }
   }

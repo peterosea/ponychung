@@ -25,7 +25,10 @@ $urlParent = '../';
               <tr>
                 <th class="require">아이디</th>
                 <td>
-                  <input type="text" name="" class="form-control size-medium"><a href="#" class="btn btn_light btn_box">중복확인</a><span class="_desc">5~12자까지 영문/숫자만 허용</span>
+                  <div class="inputWrap">
+                    <input type="text" name="" class="form-control size-medium"><a href="#" class="btn btn_light btn_box">중복확인</a>
+                  </div>
+                  <span class="_desc">5~12자까지 영문/숫자만 허용</span>
                 </td>
               </tr>
               <tr>
@@ -47,11 +50,11 @@ $urlParent = '../';
               </tr>
               <tr>
                 <th class="require">이메일주소</th>
-                <td><input type="text" name="" class="form-control size-medium"> @ <input type="text" name="" class="form-control size-medium"></td>
+                <td class="email"><input type="text" name="" class="form-control size-medium"> <span class="symbol">@</span> <input type="text" name="" class="form-control size-medium"></td>
               </tr>
               <tr>
                 <th>휴대전화번호</th>
-                <td>
+                <td class="tel">
                   <input type="text" name="" class="form-control size-small"> - <input type="text" name="" class="form-control size-small"> - <input type="text" name="" class="form-control size-small">
                 </td>
               </tr>

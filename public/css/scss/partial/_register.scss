@@ -1,13 +1,22 @@
 body.register {
   .content_container {
-    max-height: 900px;
-    height: calc(90vh - 138px);
+    @media screen and (min-height: 900px) {
+      max-height: 900px;
+      height: calc(90vh - 138px);
+    }
   }
   .register_wrap {
     width: 95%;
     max-width: 1000px;
     background-color: #fff;
     padding: 50px 60px;
+    @include respondTo("md") {
+      padding: 40px;
+      width: 100%;
+    }
+    @include respondTo("sm") {
+      padding: 40px 20px;
+    }
   }
   .title {
     padding-bottom: 25px;
@@ -74,6 +83,9 @@ body.register {
   .btn_grp {
     margin-top: 50px;
     text-align: center;
+    @include respondTo("md") {
+      margin-top: 20px;
+    }
     a:first-child {
       margin-right: 20px;
     }
@@ -84,6 +96,9 @@ body.register {
     height: auto;
     .container {
       padding: 80px 0;
+      @include respondTo("md") {
+        padding: 0;
+      }
     }
   }
   // 개인정보 입력
@@ -124,8 +139,14 @@ body.register {
         height: 46px;
         padding: 10px;
         display: inline-block;
+        @include respondTo("md") {
+          width: 100%;
+        }
         &.size-medium {
           max-width: 254px;
+          @include respondTo("md") {
+            max-width: none;
+          }
         }
         &.size-small {
           max-width: 92px;
@@ -136,6 +157,11 @@ body.register {
           font-size: 14px;
           color: $grey-nine;
           padding-left: 10px;
+          @include respondTo("md") {
+            display: block;
+            padding-left: 0;
+            margin-top: 8px;
+          }
           &.bottom {
             padding-left: 0;
             margin-top: 8px;
@@ -143,6 +169,35 @@ body.register {
         }
         a {
           margin-left: 10px;
+        }
+      }
+      @include respondTo("md") {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: block;
+        tr {
+          display: block;
+          margin-bottom: 20px;
+        }
+        td,
+        th {
+          display: block;
+          width: 100%;
+        }
+        .inputWrap {
+          display: flex;
+          margin-bottom: 10px;
+        }
+        td.email {
+          display: flex;
+          align-items: center;
+          .symbol {
+            padding: 0 10px;
+          }
+        }
+        td.tel {
+          display: flex;
+          align-items: center;
         }
       }
     }
