@@ -21,6 +21,16 @@ body {
   background-color: #2f2f2f;
 }
 
+body.mobileMenuActive {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body.mobileMenuActive header.main_header.main_header:before {
+  background-color: #4b5055;
+  z-index: 999;
+}
+
 body,
 div,
 p,
