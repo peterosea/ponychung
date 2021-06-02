@@ -7,6 +7,7 @@ body.home {
   .content_container.home_content {
     padding: 90px 0;
     background-color: transparent;
+    justify-content: flex-start;
     @include respond-to("wide") {
       padding: 50px 0;
     }
@@ -231,6 +232,7 @@ body.home {
     .banner {
       height: 50%;
       width: 100%;
+      min-height: 320px;
       ._link {
         display: flex;
         @extend .bgImg;

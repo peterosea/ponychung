@@ -110,24 +110,8 @@
       <div class="banner _status">
         <a href="#" class="_link flex_col">
           <div class="icon ic_status">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.5 40.5">
-              <g transform="translate(-1038.315 -7022.729)">
-                <rect id="사각형_51" width="31" height="39" class="cls-1" rx="1" transform="translate(1039.065 7023.479)" />
-                <g id="그룹_31" transform="translate(1046.731 7030.387)">
-                  <path id="선_17" d="M0 0L0 4" class="cls-1" transform="translate(4.334 4.091)" />
-                  <path id="선_18" d="M0 4L0 0" class="cls-1" transform="translate(11.334 4.091)" />
-                  <path id="패스_196" d="M1055.7 7031.583c-.276-1.459-2.161-2.566-3.849-2.566-1.689 0-3.574 1.106-3.85 2.563" class="cls-1" transform="translate(-1044.151 -7027.016)" />
-                  <path id="패스_197" d="M1054.276 7034.017a5.689 5.689 0 0 1-1.276 3.849" class="cls-1" transform="translate(-1042.735 -7025.601)" />
-                  <path id="패스_198" d="M1048.008 7034.017a5.683 5.683 0 0 0 1.278 3.849" class="cls-1" transform="translate(-1044.15 -7025.601)" />
-                  <g id="그룹_30" transform="translate(0 12.245)">
-                    <path id="패스_199" d="M1058.133 7039.566L1053 7037" class="cls-1" transform="translate(-1042.734 -7037)" />
-                    <path id="선_19" d="M5.135 0L0 2.546" class="cls-1" transform="translate(0 .02)" />
-                  </g>
-                  <path id="패스_200" d="M1045 7039v2.566h15.4V7039" class="cls-1" transform="translate(-1045 -7024.189)" />
-                  <path id="선_21" d="M0 0L15 0" class="cls-1" transform="translate(.334 25.091)" />
-                </g>
-              </g>
-            </svg>
+             <!--- 06.02 svg 코드를 svg 파일로 교체. --->
+            <img src="/public/img/ic_status.svg" style="height: 41px;">
           </div>
           <span>내 지원현황</span>
         </a>
@@ -136,17 +120,8 @@
       <div class="banner _board">
         <a href="#" class="_link flex_col">
           <div class="icon ic_board">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.924 39.924">
-              <g id="그룹_27" transform="translate(-2056.972 -564.25)">
-                <g id="그룹_26" transform="translate(2058 573.901)">
-                  <path id="패스_192" d="M2087.245 581s-5.459 7.166-6.357 15.258C2068.729 592.4 2058 598.8 2058 598.8" class="cls-1" transform="translate(-2058 -569.556)" />
-                  <path id="패스_193" d="M2075.8 572s-7.167 5.459-15.258 6.358c3.934 11.165-2.543 22.888-2.543 22.888" class="cls-1" transform="translate(-2058 -572)" />
-                  <path id="선_16" d="M0 11L11 0" class="cls-1" transform="translate(.146 18.099)" />
-                </g>
-                <path id="패스_194" d="M2067.745 582.745a2.543 2.543 0 1 1 0 3.6 2.543 2.543 0 0 1 0-3.6z" class="cls-1" transform="translate(2.444 4.616)" />
-                <path id="패스_195" d="M2075.756 581.567c4.987 4.987 11.481 5.049 16.567-.037l-16.53-16.53c-5.086 5.086-4.805 11.8-.037 16.567z" class="cls-1" transform="translate(3.823)" />
-              </g>
-            </svg>
+            <!--- 06.02 svg 코드를 svg 파일로 교체. --->
+            <img src="/public/img/ic_board.svg" style="height: 41px;">
           </div>
           <span>장학생 게시판</span>
         </a>
