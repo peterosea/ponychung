@@ -21,6 +21,9 @@ body {
       z-index: 999;
     }
   }
+  svg {
+    overflow: hidden;
+  }
 }
 body,
 div,
